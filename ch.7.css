@@ -1,0 +1,506 @@
+.practice-section {
+    padding: 20px; /* General padding for all sections */
+    margin: 20px auto; /* Center sections horizontally with vertical spacing */
+    max-width: 90%; /* Max width for better readability on larger screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fff; /* Default background for section content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Clear floats within sections */
+}
+
+
+
+
+#practice4 .conta{ font-family:Verdana, Arial, sans-serif;
+       background-color: #00005D;
+}
+#practice4 #wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:940px;
+} 
+#practice4 a{
+    color: blue;
+
+}
+#practice4 nav { float: left;
+	  width: 150px;
+} 
+#practice4 nav ul { list-style-type: none;
+         padding: 10px; }
+#practice4 nav a { text-decoration: none;
+        padding: 10px;
+        font-weight: bold; }
+#practice4 main { margin-left: 155px;
+       background-color: #ffffff;
+       color: #000000;
+	   display: block;
+} 
+#practice4 header { background-color: #869dc7;
+        color: #00005D; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+		background-image: url(lighthouselogo.jpg); 
+		background-repeat: no-repeat;
+		height: 130px;
+}
+
+#practice4 h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+     text-align: left;
+}
+#practice4 .content {padding: 20px 20px 0 20px; 
+} 
+#floatright { margin: 10px;
+             float: right;
+}
+
+#practice4 footer { font-size:70%;
+         text-align: center;
+         background-color: transparent;
+		 clear: right;
+         padding-bottom:20px;
+}
+
+
+#practice5 .for {font-family:Verdana, Arial, sans-serif;
+      background-color: #00005D;
+}
+#practice5 #wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:940px;
+}  
+#practice5 header { background-color: #869dc7;
+        color: #323286; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+		background-image: url(lighthouselogo.jpg); 
+		background-repeat: no-repeat;
+		height: 130px;
+}
+#practice5 h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+}
+#practice5 nav ul { list-style-type: none;
+         text-align: center;
+		 font-size: 1.5em;
+		 margin: 5px; 
+}
+#practice5 a{
+    color: blue;
+}
+#practice5 nav li { display: inline; }
+#practice5 nav a { text-decoration: none;
+        padding-left: 10px;
+		padding-right: 10px;
+}
+#practice5 main { padding: 20px 20px 0 20px; 
+           background-color: #ffffff;
+           color: #000000;
+		   display: block;
+} 
+#practice5 main img { margin: 10px;
+             float: right;
+}
+
+#practice5 footer {font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding-bottom:20px;
+}
+
+
+/* <style practice for 7.6 */
+#practice6 {font-family:Verdana, Arial, sans-serif;
+      background-color: #00005D;
+}
+#practice6 #wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:940px;
+} 
+#practice6 nav { float: left;
+	          width: 150px;
+} 
+#practice6 nav ul { list-style-type: none; padding: 10px; }
+#practice6 nav a { text-decoration: none; padding: 10px;
+        font-weight: bold; }
+#practice6 nav a:link { color: #FFFFFF; }
+#practice6 nav a:visited { color: #EAEAEA; }
+#practice6 nav a:hover { color: #000066;
+    background-color: transparent;
+}
+#practice6 main { margin-left: 155px;
+               background-color: #ffffff;
+               color: #000000;
+			   display: block;
+} 
+#practice6 header { background-color: #869dc7;
+        color: #00005D; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+		background-image: url(lighthouselogo.jpg); 
+		background-repeat: no-repeat;
+		height: 130px;
+}
+
+#practice6 h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+     text-align: left;
+}
+#practice6 .content {padding: 20px 20px 0 20px; 
+} 
+#practice6 #floatright { margin: 10px;
+             float: right;
+}
+
+#practice6 footer {font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding-bottom:20px;
+         background-color: transparent;
+}
+
+/* style for practice 7 */
+#practice7 { background-color: #00005D;
+	   font-family: Verdana, Arial, sans-serif; }
+#practice7 #wrapper { margin: 0 auto; 
+           width: 80%; 
+		   min-width: 940px;
+		   background-color: #B3C7E6; 
+		  color: #000066; }
+#practice7 header { background-color: #869DC7; 
+        color: #00005D;
+        font-size: 150%; 
+		padding: 10px 10px 10px 155px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-image: url(lighthouselogo.jpg); }
+#practice7 nav { float: right; 
+     width: 150px; 
+	 font-weight: bold;
+     letter-spacing: 0.1em; }
+#practice7 main { background-color: #FFFFFF; 
+          color: #000000;
+		  padding: 10px 20px; 
+		 display: block;
+		overflow: auto; }
+#practice7 h2 { color: #869DC7;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+#practice7 #floatright { float: right; margin: 10px; }
+
+#practice7 nav ul { list-style-type: none; margin: 0; padding: 0; }
+#practice7 nav a { text-decoration: none; padding: 20px; display: block;
+       background-color: #B3C7E6;
+       border-bottom: 1px solid #FFFFFF; 
+}
+#practice7 nav a:link { color: #FFFFFF; }
+#practice7 nav a:visited { color: #EAEAEA; }
+#practice7 nav a:hover { color: #869DC7;
+             background-color: #EAEAEA; } 
+#practice7 footer { font-size: 70%; 
+       text-align: center;
+	   padding: 10px;
+	   background-color: #869DC7; 
+	   clear: both;
+}
+
+
+/* style for practice 7.8 */
+#practice8  * { box-sizing: border-box; 
+/* background-color: #00005D; */
+font-family: Verdana, Arial, sans-serif; 
+}
+#practice8 #wrapper { margin: 0 auto; 
+           width: 80%; 
+		   min-width: 940px;
+		   background-color: #B3C7E6; 
+		  color: #000066; }
+#practice8 header { background-color: #869DC7; 
+        color: #00005D;
+        font-size: 150%; 
+		padding: 10px 10px 10px 155px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-image: url(lighthouselogo.jpg); }
+#practice8 nav { float: right; 
+     width: 150px; 
+	 font-weight: bold;
+     letter-spacing: 0.1em; }
+#practice8 main { background-color: #FFFFFF; 
+          color: #000000;
+		  padding: 10px 20px; 
+		 display: block;
+		overflow: auto; }
+#practice8 h2 { color: #869DC7;
+    font-family: Arial, sans-serif; }
+#practice8 #floatright { float: right; margin: 10px; }
+
+#practice8 nav ul { list-style-type: none; margin: 0; padding: 0; }
+#practice8 nav a { text-decoration: none; padding: 20px; display: block;
+       background-color: #B3C7E6;
+       border-bottom: 1px solid #FFFFFF; 
+}
+#practice8 nav a:link { color: #FFFFFF; }
+#practice8 nav a:visited { color: #EAEAEA; }
+#practice8 nav a:hover { color: #869DC7;
+             background-color: #EAEAEA; } 
+#practice8 footer { font-size: 70%; 
+       text-align: center;
+	   padding: 10px;
+	   background-color: #869DC7; 
+	   clear: both;
+}
+/* <!----part two css --->?* */
+#practice8 { box-sizing: border-box;
+    background-color: #00005D;
+    font-family: Verdana, Arial, sans-serif; 
+}
+#practice8 #wrapper { margin: 0 auto; 
+           width: 80%; 
+		   min-width: 940px;
+		   background-color: #B3C7E6; 
+		  color: #000066; }
+#practice8 header { color: #000000; font-size: 20pt; }
+#practice8 nav { display: none; }
+#practice8 main { font-family: "Times New Roman", serif; font-size: 12pt; }
+#practice8 h2 { color: #869DC7;
+    font-family: Arial, sans-serif; }
+#practice8 #floatright { float: right; margin: 10px; }
+
+#practice8 nav ul { list-style-type: none; margin: 0; padding: 0; }
+#practice8 nav a { text-decoration: none; padding: 20px; display: block;
+       background-color: #B3C7E6;
+       border-bottom: 1px solid #FFFFFF; 
+}
+#practice8 nav a:link { color: #FFFFFF; }
+#practice8 nav a:visited { color: #EAEAEA; }
+#practice8 nav a:hover { color: #869DC7;
+             background-color: #EAEAEA; } 
+#practice8 footer { font-size: 70%; 
+       text-align: center;
+	   padding: 10px;
+	   background-color: #869DC7; 
+	   clear: both;
+}
+
+
+
+
+
+
+.practice-section {
+    padding: 20px; /* General padding for all sections */
+    margin: 20px auto; /* Center sections horizontally with vertical spacing */
+    max-width: 90%; /* Max width for better readability on larger screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fff; /* Default background for section content */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Clear floats within sections */
+}
+
+
+
+
+
+
+/* <!----style for practice 4 ----> */
+/* #practice4 .conta{ font-family:Verdana, Arial, sans-serif;
+       background-color: #00005D;
+}
+#practice4 #wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:940px;
+} 
+#practice4 a{
+    color: blue;
+
+}
+#practice4 nav { float: left;
+	  width: 150px;
+} 
+#practice4 nav ul { list-style-type: none;
+         padding: 10px; }
+#practice4 nav a { text-decoration: none;
+        padding: 10px;
+        font-weight: bold; }
+#practice4 main { margin-left: 155px;
+       background-color: #ffffff;
+       color: #000000;
+	   display: block;
+} 
+#practice4 header { background-color: #869dc7;
+        color: #00005D; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+		background-image: url(lighthouselogo.jpg); 
+		background-repeat: no-repeat;
+		height: 130px;
+}
+
+#practice4 h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+     text-align: left;
+}
+#practice4 .content {padding: 20px 20px 0 20px; 
+} 
+#floatright { margin: 10px;
+             float: right;
+}
+
+#practice4 footer { font-size:70%;
+         text-align: center;
+         background-color: transparent;
+		 clear: right;
+         padding-bottom:20px;
+} */
+
+
+
+/* style of practice 7.9 */
+#practice9 { box-sizing: border-box;
+    background-color: #00005D;
+}
+#practice9 #wrapper { margin: 0 auto; 
+	width: 80%; 
+	min-width: 940px;
+	background-color: #B3C7E6; 
+	color: #000066; }
+#practice9 header { background-color: #869DC7; 
+	color: #00005D; 
+	font-size: 150%;
+	padding: 10px 10px 10px 155px; 
+	background-repeat: no-repeat;
+	background-image: url(lighthouselogo.jpg); 
+	height: 130px; }
+#practice9 nav { float: right; 
+	width: 150px; 
+	font-weight: bold; 
+	letter-spacing: 0.1em; }
+#practice9 main { background-color: #FFFFFF; 
+	color: #000000; 
+	display: block;
+	padding: 10px 20px; 
+	overflow: auto; }
+#practice9 h2 { color: #869DC7; font-family: Arial, sans-serif; 
+    text-align: left;
+}
+#practice9 main img { float: right; margin: 10px; }
+#practice9 nav ul { list-style-type: none; margin: 0; padding: 0; }
+#practice9 nav a { text-decoration: none; 
+	padding: 20px; 
+	display: block;
+	background-color: #B3C7E6; 
+	border-bottom: 1px solid #FFFFFF;
+	background-image: url(sprites.gif);
+    background-repeat: no-repeat;
+    background-position: right 0; }
+#practice9 nav a:link { color: #FFFFFF; }
+#practice9 nav a:visited { color: #EAEAEA; }
+#practice9 nav a:hover { color: #869DC7;
+	background-color: #EAEAEA; 
+	background-position: right -100px; }
+#practice9 footer { font-size: 70%; 
+	text-align: center; 
+	padding: 10px;
+	background-color: #869DC7; 
+	clear: both;}
+
+
+
+
+
+
+
+
+
+#practice10 { box-sizing: border-box; }
+#practice10 #gallery { position: relative; }
+#practice10 #gallery ul { width: 280px; 
+             list-style-type: none; }
+#practice10 #gallery li { display: inline; 
+              float: left; 
+			  padding: 10px; }
+#practice10 #gallery img { border-style: none; }
+#practice10 #gallery a { text-decoration: none; 
+             color: #333; 
+			 font-style: italic; }
+#practice10 #gallery span { display: none; }    
+#practice10 #gallery a:hover span { display: block; 
+                        position: absolute;
+					    top: 10px; 
+						left: 300px; 
+						text-align: center; }
+
+
+                        /* styles for practice 7.11 */
+#practice11{ box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+      background-color: #00005D;
+}
+#practice11 #wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:940px;
+}  
+#practice11 header { 
+    background-color: #869dc7;
+        color: #00005D; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+		background-image: url(lighthouselogo.jpg); 
+		background-repeat: no-repeat;
+		height: 130px;
+		margin-top: 40px;
+}
+#practice11 h2 { 
+    color: #869dc7; 
+     font-family: arial, sans-serif;
+}
+#practice11 nav { position: fixed; top: 0; left: 0; 
+     height: 40px;
+	 min-width: 40em;
+	 width: 100%;
+     background-color: #B3C7E6;
+	 z-index: 9999;
+}
+#practice11 nav ul { list-style-type: none;
+         text-align: right;
+		 font-size: 1.5em;
+		 margin: 10px;
+         padding-right: 10%;		 
+}
+#practice11 nav li { display: inline; }
+#practice11 nav a { text-decoration: none;
+        padding-left: 10px;
+		padding-right: 10px;
+}
+#practice11 main { padding: 20px 20px 0 20px; 
+           background-color: #ffffff;
+           color: #000000;
+		   display: block;
+} 
+#practice11 main img { margin: 10px;
+             float: right;
+}
+
+#practice11 footer {font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding-bottom:20px;
+} 

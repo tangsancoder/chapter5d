@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <title>ch.6</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="chap6.css">
+</head>
+
+<header class="bg-white shadow p-4 flex justify-between items-center flex-wrap">
+  <!-- <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_.jpg" alt="DK Logo" class="rounded-lg shadow w-11" /> -->
+
+  <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_.jpg" alt="DK Logo" class="rounded-lg shadow w-20" />
+
+  <nav class="flex items-center space-x-5 text-sm md:text-base relative">
+    <a href="home-page[1].html" class="text-teal-800 font-semibold">Home</a>
+    <a href="/About-me.htm" class="hover:underline">About Me</a>
+    <a href="/about-JUS.html" class="hover:underline">About Jamacad</a>
+    <a href="/About-xfdey.html" class="hover:underline">About Xfadeyda</a>
+    <a href="/About-Content.htm" class="hover:underline">Content</a>
+  
+
+  <!-- Others Dropdown -->
+  <div class="relative">
+    <button id="dropdownButton" class="hover:underline focus:outline-none text-sm md:text-base">Others▾</button>
+    <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-white shadow-lg rounded-md mt-1 w-36 py-1 z-50 text-sm">
+      <li><a href="chapter 6.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 6</a></li>
+      <li><a href="ch.7.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 7</a></li>
+      <li><a href="chapter 8.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 8</a></li>
+      <li><a href="chapter 9.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 9</a></li>
+      <li><a href="chapter 10.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 10</a></li>
+    </ul>
+
+  </div>
+
+</header>
+</nav>
+
+<!-- JavaScript for toggle -->
+<script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+</script>
+
+
+    <div class="main-content-wrapper">
+
+        <!-- Practice 6.1 Section (from ch6p1.html) -->
+        <section id="practice1" class="practice-section">
+        <h2 style="text-decoration: underline; font-weight: bold;  color: white;">practice 6.1</h2>
+
+            <div class="containe">
+                <div class="info">
+                    <!-- Placeholder for coffeelog.png -->
+                    <img src="coffeelogo.jpg" alt="coffee logo">
+                    <h4 style="color: black;font-size: 4em;">Coffee House</h4>
+                </div>
+                <header class="nav-link">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Music</a>
+                        <a href="#">Jobs</a>
+                    </nav>
+                </header>
+                                <main>
+<h2 style="color: black;  text-align: left; font-size: 2em;">Follow the Winding Road to Coffee House</h2>
+<h3 style="color: black;  text-align: left; font-size: 2em;">Coffee House features:</h3>
+<ul style="color: black;  text-align: left;font-size: 1em;">
+  <li>Specialty Coffee and Tea</li>
+  <li>Bagels, Muffins, and Gluten-free Pastries</li>
+  <li>Organic Salads</li>
+  <li>Music and Poetry Readings</li>
+  <li>Open Mic Night</li>
+</ul>
+<div style="color: black;  text-align: left;font-size: 1em;" >
+12010 Garrett Bay Road<br>
+Ellison Bay, WI 54210<br>
+888-555-5555<br><br>
+</div>
+</main>
+<footer>
+Copyright &copy; 2020 Coffee House<br>
+</footer>
+            </div>
+
+
+        </section>
+
+
+
+
+<div class="bg-black text-center">
+  <div class="bg-white m-10 rounded-lg p-5">
+<body class="bg-black min-h-screen m-4 p-2">
+  <!-- Wrapper si box-ka kor ugu dhawado -->
+  <div class="flex items-start justify-center min-h-[4vh] pt-9">
+    
+    <!-- Box weyn oo muuqaal yar leh -->
+
+
+    <div class="bg-white shadow-lg p-4 border border-gray-30 rounded-md w-full max-w-2x1 text-center">
+      
+      <!-- Title -->
+      <p class="text-lg underline font-semibold mb-4">Practice 6.2</p>
+         
+  
+
+      <!-- Blue Heading -->
+      <!-- <div class="bg-blue-100 py-3 border-b-2 border-red-1000 mb-3">
+        <h2 class="text-2xl font-bold text-gray-900 ">Examples of The Box Model</h2> -->
+  <div class="bg-blue-100 py-3 mb-3">
+      <!-- <div class="flex justify-center"> -->
+  <h2 class="text-2xl font-bold text-gray-900">Examples of The Box Model</h2>
+  <div class="h-[3px] w-100 bg-red-900 mt-1 rounded">
+      </div>
+      </div>
+      
+
+      <!-- Blue Box -->
+      <div class="bg-blue-300 border border-black p-8 mb-4">
+        <p class="text-lg font-semibold text-gray-900">
+          HTML elements display as boxes on web pages. 
+          <span class="font-bold">This div element</span>
+          is configured to have a blue background.
+        </p>
+      </div>
+
+      </div>
+      </div>
+      </div>
+      
+
+    
+     
+      </div>
+
+   
+ 
+<!-- <body class="bg-black min-h-screen m-4 p-2"></body> -->
+<div class="bg-white m-10 rounded-lg p-7 shadow-lg">
+  <div class="bg-gradient-to-b from-white to-blue-200 text-black">
+  <!-- Header (unchanged) -->
+   <!-- <div class="bg-b bg-opacity-10 p-30 rounded-lg"> -->
+    <!-- Body Section with light-medium blue background -->
+<!-- <div class="bg-gray-300 p-9 rounded-lg"> -->
+  <!-- Body Section with light blue-gray background -->
+<!-- <div class="bg-[#e0e7f8] p-3 rounded-lg"> -->
+
+
+<!-- <div class="bg-gradient-to-b from-white to-gray-400 text-black"> -->
+     <!-- <p class="text-lg underline font-semibold mb-4">Practice 6.3</p> -->
+
+  <!-- Header with Image and Title -->
+   
+  <div class="bg-[#a3b7d3] rounded-t-xl m-8 p-0 overflow-hidden relative h-40 min-w">
+    <img src="/lighthouselogo.jpg" alt="lighthouse" class="w-full h-[200px] object-cover" />
+    <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-gray-900">
+      Lighthouse Bistro
+    </h1>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="px-10 pb-6">
+    <nav class="space-x-8 underline text-pink-900 font-medium">
+      <a href="#" class="hover:text-blue-700">Home</a>
+      <a href="#" class="hover:text-blue-700">Menu</a>
+      <a href="#" class="hover:text-blue-700">Directions</a>
+      <a href="#" class="hover:text-blue-700">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Content Section -->
+  <div class="px-10 text-gray-900 text-base">
+    <!-- Coffee -->
+    <h2 class="text-xl font-bold mt-6 mb-2">Locally Roasted Free-Trade Coffee</h2>
+    <p class="mb-4">
+      Indulge in the aroma of freshly ground roast coffee. Specialty drinks are availble hot or cold.
+    </p>
+
+    <!-- Pastries -->
+    <h2 class="text-xl font-bold mt-6 mb-2">Speciality Pastries</h2>
+    <p class="mb-4">
+      Enjoy our fresh baked, organic pastries, including fresh fruit muffins, scones, croissants and cinnamon rolls.
+    </p>
+
+    <!-- Lunchtime -->
+    <h2 class="text-xl font-bold mt-6 mb-2">Lunchtime is Anytime</h2>
+    <p class="mb-10">
+      Savour delicious wraps and sandwiches on hearty, whole grain breads with local grown salad, fruit and vegetables.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="px-10 pb-6 text-sm text-black font-semibold">
+    <p>&copy; deka Abdi Ali</p>
+  </footer>
+</div>
+</div>
+</div>                                                                                                              header see box oogu dhajinkaraa header border kadhig plz 
+
+
+
+
+
+
+<!-- <body class="bg-black"> -->
+
+  <!-- Border-ka weyn: gradient slate to blue -->
+   
+  <div class="bg-gradient-to-r from-slate-500  to-gray-500 m-10 rounded-lg p-9">
+
+    <!-- Gudaha: white sida uu yahay -->
+    <div class="bg-white p-50 ">
+
+           <h1 class="text-xl text-center font-semibold underline mb-4 p-2 rounded-md">
+        Practice 6.4
+      </h1> 
+
+
+      <!-- <h1 class="text-xl font-semibold underline mb-4 p-2 rounded-md">
+        Practice 6.4
+      </h1>  -->
+
+      <!-- <div class="relative rounded-lg overflow-hidden">
+        <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+        <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center bg-center tracking-wide">
+          Lighthouse Bistro
+        </h2>
+      </div> -->
+
+<!-- 
+       <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center  tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div> --> 
+     <div class="bg-[#a3b7d3] rounded-t-xl m-8 p-0 overflow-hidden relative h-40 min-w">
+    <img src="/lighthouselogo.jpg" alt="lighthouse" class="w-full h-[200px] object-cover" />
+    <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-gray-900">
+      Lighthouse Bistro
+    </h1>
+  </div>
+
+
+      <div class="mt-22 text-left">
+        <div class="flex justify-center tex-xl font-bold underline gap-8 mt-6 text-lg text-blue-800">
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Home</a>
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Menu</a>
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Music</a>
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Jobs</a>
+        </div>
+
+        <div class="mt-9 text-gray-700 text-2xl font-bold">
+          <h1>Locally Roasted Free-Trade Coffee</h1>
+        </div>
+        <p class="mt-4">
+          Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.
+        </p>
+
+        <div class="mt-9 text-gray-700 text-2xl font-bold">
+          <h1>Speciality Pastries</h1>
+        </div>
+        <p class="mt-4">
+          Enjoy our fresh baked, organic pastries,<br>
+          including fresh fruit muffins, scones, croissants and cinnamon rolls.
+        </p>
+
+        <div class="mt-9 text-gray-700 text-2xl font-bold">
+          <h1>Lunchtime is Anytime</h1>
+        </div>
+        <p class="mt-4">
+          Savour delicious wraps and sandwiches on hearty,<br>
+          whole grain breads with locally grown salad, fruit and vegetables.
+        </p>
+      </div>
+
+      <footer class="text-left p-4 mt-10">
+        <p class="text-gray-600">© 2025 Deka Abdi Ali</p>
+      </footer>
+
+    </div>
+    </div>
+    
+  
+
+
+
+
+
+
+
+
+  <!-- Border-ka weyn: gradient slate to gray -->
+  <div class="bg-gradient-to-r from-slate-500 to-blue-200 m-10 rounded-lg p-7 shadow-lg">
+
+    <!-- Gudaha: white, leh border midig & hoose + shadow xoog leh -->
+    <!-- <div class="bg-white p-1  border-r-4 border-b-4 border-black shadow-2x2"> -->
+<div class="bg-white p-1 border-r-4 border-b-4 border-black-20" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);">
+
+
+
+
+      <h1 class="text-xl text-center font-semibold underline mb-4 p-2 rounded-md">
+        Practice 6.5
+      </h1> 
+
+    <div class="relative rounded-lg overflow-hidden">
+  <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+  <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+             text-[3rem] font-extrabold text-black text-center tracking-wide 
+             drop-shadow-[4px_6px_6px_rgba(0,0,0,0.5)]">
+    Lighthouse Bistro
+  </h2>
+</div>
+
+
+      <div class="mt-22 text-left">
+        <div class="flex justify-center text-xl font-bold underline gap-8 mt-6 text-blue-800">
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Home</a>
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Menu</a>
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Music</a>
+          <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Jobs</a>
+        </div>
+
+        <div class="mt-9 text-gray-700 text-2xl  font-bold">
+          <h1>Locally Roasted Free-Trade Coffee</h1>
+        </div>
+        <p class="mt-4">
+          Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.
+        </p>
+
+        <div class="mt-9 text-gray-700 text-2xl font-bold">
+          <h1>Speciality Pastries</h1>
+        </div>
+        <p class="mt-4">
+          Enjoy our fresh baked, organic pastries,<br>
+          including fresh fruit muffins, scones, croissants and cinnamon rolls.
+        </p>
+
+        <div class="mt-9 text-gray-700 text-2xl font-bold">
+          <h1>Lunchtime is Anytime</h1>
+        </div>
+        <p class="mt-4">
+          Savour delicious wraps and sandwiches on hearty,<br>
+          whole grain breads with locally grown salad, fruit and vegetables.
+        </p>
+      </div>
+
+      <footer class="text-left p-4 mt-10">
+        <p class="text-gray-600">© 2025 Deka Abdi Ali</p>
+      </footer>
+
+    </div>
+  </div>
+
+
+<!-- Background-ka guud oo la mid ah footer-ka -->
+<div class="bg-[#FAF3E0] bg-opacity-90 m-5 p-9 rounded-lg">
+  <h1 class="text-xl text-center font-semibold underline mb-4 p-2 rounded-md">
+    Practice 6.6
+  </h1> 
+
+  <!-- Container gudaha leh border, shadow iyo background cad -->
+  <div class="relative border-[3px] border-gray-400 shadow-[6px_6px_20px_rgba(0,0,0,0.5)] w-[700px] mx-auto rounded-md overflow-hidden bg-white">
+
+    <!-- Sawirka kore -->
+    <div class="relative shadow-[6px_6px_20px_rgba(0,0,0,0.5)]">
+      <img
+        src="/headerbackblue.jpg"
+        alt="backblue" 
+        class="w-full h-[70px] object-cover"
+      />
+      <!-- Qoraalka overlay kore -->
+      <h2 class="absolute top-[15px] left-1/2 transform -translate-x-1/2 text-[2rem] font-extrabold text-white drop-shadow-md tracking-wide">
+        KayakDoorCounty.net
+      </h2>
+    </div>
+
+    <!-- Menu -->
+    <div class="bg-white p-3">
+      <div class="flex justify-center text-xl font-bold underline gap-5 text-blue-800">
+        <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Home</a>
+        <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Tours</a>
+        <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Reservations</a>
+        <a href="#" class="hover:text-[#3B1E0C] cursor-pointer">Contact</a>
+      </div>
+    </div>
+
+    <!-- Border cad u dhexeeya -->
+    <div class="border-t border-white"></div>
+
+    <!-- Sawirka hoose oo qoraal left aligned ah -->
+    <div class="relative shadow-[6px_6px_20px_rgba(0,0,0,0.5)]">
+      <img
+        src="/heroback2.jpg"
+        alt="backblue" 
+        class="w-full h-[300px] object-cover"
+      />
+      <!-- Qoraalka dusha sare ee left aligned oo leh background light -->
+      <div class="absolute top-6 left-6  text-white text-base drop-shadow-lg p-4 rounded-md w-[80%]">
+        <h2 class="font-bold text-xl mb-2">Your next adventure is only a paddle away ....</h2>
+        <p class="mb-3">Take a guided kayak tour while you explore the shoreline of scenic Door County.</p>
+        <h1 class="font-bold text-lg mb-1">Featured tours this week:</h1>
+        <ul class="list-disc list-inside">
+          <li>Cana Island</li>
+          <li>Mink River</li>
+          <li>Europe Lake</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#FAF3E0] text-left italic text-sm p-4 rounded-md">
+      Copyright © 2025 deka Abdi Ali. All rights reserved.
+    </footer>
+  </div>
+  </div>
+
+
+
+
+
+<!-- 
+<div class="bg-white p-1 rounded-lg border-r-4 border-b-4 border-black shadow-2xl">
+  <h1 class="text-xl text-center font-semibold underline mb-4 p-2 rounded-md">
+    Practice 6.7
+  </h1> 
+
+  <img
+    src="/fall.jpg"
+    alt="fall" 
+    class="mx-auto w-[90%] h-[200px] object-cover rounded-md shadow-md"
+  />
+</div> -->
+
+<!-- <div class="bg-gray-100 font-sans leading-normal tracking-normal"> -->
+  <!-- Main Content -->
+   
+   
+<div class="bg-black text-center">
+  <div class="bg-white m-10 rounded-lg p-2">
+
+    <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 6.7</h1>
+
+   
+    <div class="relative w-[70%] mx-auto">
+      <!-- Sawirka -->
+      <img 
+        src="/fall.jpg" 
+        alt="fall" 
+        class="w-full h-auto object-cover rounded-md shadow-md"
+      />
+
+      <!-- Boxka qoraalka bartamaha sawirka -->
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="bg-white bg-opacity-70 px-10 py-6  rounded-md border border-gray-400">
+          <p class="text-5xl text-black tracking-wide">Fall Nature Hikes</p>
+        </div>
+      </div>
+    </div>
+
+   
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="bg-black text-center">
+  <div class="bg-white m-10 rounded-lg p-2">
+
+    <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 6.8</h1>
+
+    <div class="relative w-[70%] mx-auto"> -->
+      <!-- Sawirka -->
+      <!-- <img 
+        src="/fall.jpg" 
+        alt="fall" 
+        class="w-full h-auto object-cover rounded-md shadow-md"
+      /> -->
+
+      <!-- Qoraalka meesha sawirka -->
+      <!-- <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="text-9xl text-white   ">Fall Nature Hikes</h1>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+          <!-- <section id="practice8" class="practice-section"> -->
+             <section id="practice8" class="practice-section">
+            <h2 style="text-align: center; text-decoration: underline;">Practice 6.8</h2>
+            <!-- Placeholder for fall.jpg. Inline style kept for specific background-image. -->
+            <div id="content" style="background-image: url('/fall.jpg');">
+                <h1>Fall Nature <br>Hikes</h1>
+            </div>
+        </section>
+
+         <!---6.9 section-->
+        <!-- <section id="practice9" class="practice-section">
+            <h2 style="text-align: center; text-decoration: underline; font-weight: bold;">practice 6.9</h2>
+             Placeholder for fall.jpg. Inline style kept for specific background-image. -->
+            <!-- <div id="content" style="background-image: url('fall.jpg');"> -->
+                <!-- <h1 style="text-align: left; ">Fall Nature <br>Hikes</h1>
+            </div>
+        </section> --> 
+
+        <br>
+
+
+
+
+
+
+
+
+
+<!-- <div class="bg-black text-center">
+  <div class="bg-white m-10 rounded-lg p-2">
+
+    <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 6.9</h1>
+
+    <div class="relative w-[70%] mx-auto">
+      <! Sawirka -->
+      <!-- <img 
+        src="/fall.jpg" 
+        alt="fall" 
+        class="w-full h-auto object-cover rounded-md shadow-md"
+      /> -->
+
+      <!-- Qoraalka meesha sawirka -->
+      <!-- <div class="absolute inset-0 flex items-center justify-center">
+       <p class="text-9xl text-white tracking-wide font-bold">Fall Nature Hikes</p>
+
+      </div>
+    </div> -->
+
+  <!-- </div>
+</div> -->
+<!-- </div>
+
+</div> --> 
+
+
+
+
+
+        <section id="practice9" class="practice-section">
+            <h2 style="text-align: center; text-decoration: underline; font-weight: bold;"> practice 6.9</h2>
+            <!-- Placeholder for fall.jpg. Inline style kept for specific background-image. -->
+            <div id="content" style="background-image: url('fall.jpg');">
+                <h1 style="text-align: left;  ">Fall Nature <br>Hikes</h1>
+            </div>
+        </section>
+
+        <br>
+
+
+              <section id="practice10p1" class="practice-section">
+                        <h2 style="text-align: center;text-decoration: underline; color: black; font-weight: bold;">practice 6.10.1</h2>
+
+            <div class="containn">
+            <h1>Linear Gradient</h1>
+            <p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+
+            </div>
+        </section>
+
+
+        <br>
+        <!----part two 10-->
+        <section id="practice10p2" class="practice-section">
+                        <h2 style="text-align: center;text-decoration: underline; color: black; font-weight: bold;">practice 6.10.2</h2>
+            <div class="contain">
+                            <h1>Radial Gradient</h1>
+                            <p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+
+            </div>
+        </section>
+
+</body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>School History</title>
+  <meta charset="utf-8">
+
+<!-- 
+            <script src="https://cdn.tailwindcss.com"></script> -->
+
+                <link rel="stylesheet" href="chap9.css">
+
+
+      <link rel="icon" href="maaa3.png" type="image/x-icon">
+
+  <style>
+             .hero {
+      background-image: url('/maido12.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding-bottom: 10px;
+    }
+        .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: #333; */
+      padding: 15px 30px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-button {
+      background: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+
+    .dropdown-button:focus {
+      outline: none;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #000;
+      min-width: 150px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .dropdown-menu.show {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #444;
+    }
+
+    .dropdown-button.active {
+      text-decoration: underline;
+    }
+
+
+
+
+/* 
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+    }
+
+    .hero {
+      background-image: url('/maido12.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding-bottom: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .site-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 4px solid transparent;
+      padding-bottom: 5px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-links .active {
+      border-bottom-color: white;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      padding: 10px 0;
+      margin-top: 5px;
+      border-radius: 5px;
+      min-width: 160px;
+      z-index: 1000;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: gray;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }  */
+
+    /* .responsive-table {
+      overflow-x: auto;
+      display: block;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .section-box {
+          background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    
+   
+    }
+
+    #maida1 table {
+      text-align: center;
+      margin: auto;
+      border: 5px solid #000066;
+      width: 600px;
+      border-spacing: 0;
+    }
+    
+
+    #maida2 table {
+      text-align: center;
+          width: 600px;
+          border: 2px solid #000;
+      margin: auto
+                  
+                  
+            
+
+    }
+
+    
+
+    #maida1 td, th {
+      text-align: center;
+      padding: 5px;
+      border-style: none;
+    }
+
+    #safia1 caption {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding-bottom: 5px;
+    }
+
+    .altrow {
+      background-color: violet;
+    }
+
+    p:first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #F00;
+      margin-bottom: 0;
+    }
+
+    #w1 table { margin: auto; 
+        border: 5px solid #000066; 
+		width: 600px; 
+		border-spacing: 0;
+}
+#w1 td, th { padding: 5px; 
+         font-family: Arial, sans-serif;
+         border-style: none; 
+}
+#w1 caption { font-family: Verdana, sans-serif; 
+          font-weight: bold;
+		  font-size: 1.2em; 
+		  padding-bottom: 5px; 
+}
+#w1 tr:nth-of-type(even) { background-color:green; }
+#w1 tr:first-of-type { background-color: #000066;
+                   color: #eaeaea; 
+                  } */
+  </style>
+</head>
+<body>
+  <div class="hero">
+
+    <div class="navbar">
+   
+    <div class="nav-links">
+      <a href="chapter 6.html" class="active">Home</a>
+      <a href="ch.7.html">About Me</a>
+      <a href="chapter 8.html">About Jus</a>
+      <a href="chapter 9.html">About Village</a>
+      <a href="chapter 10.html">Contact</a>
+
+      <div class="dropdown">
+        <button id="dropdownButton" class="dropdown-button">Others ▾</button>
+        <div id="dropdownMenu" class="dropdown-menu">
+          <a href="chapter 6.html">Chapter 6</a>
+          <a href="ch.7.html">Chapter 7</a>
+          <a href="chapter 8.html">Chapter 8</a>
+          <a href="chapter 9.html">Chapter 9</a>
+          <a href="chapter 10.html">Chapter 10</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', (event) => {
+      event.stopPropagation(); // prevent event bubbling
+      dropdownMenu.classList.toggle('show');
+      dropdownButton.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
+        dropdownMenu.classList.remove('show');
+        dropdownButton.classList.remove('active');
+      }
+    });
+  </script>
+
+  
+
+  
+   <!-- <div class="hero">
+    <div class="navbar">
+      <div class="site-title">Maida Website</div>
+      <div class="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="about%20me.html">About Me</a>
+        <a href="about%20jus.html">About Jus</a>
+        <a href="about%20village.html">About Village</a>
+        <a href="contact.html">Contact</a>
+                          <div class="relative">
+    <button id="dropdownButton" class="hover:underline focus:outline-none text-sm md:text-base">Others▾</button>
+    <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-black shadow-lg rounded-md mt-1 w-36 py-1 z-50 text-sm">
+      <li><a href="chapter6.html" class="block px-3 py-1 hover:bg-gray-800">Chapter 6</a></li>
+      <li><a href="chapter 7.html" class="block px-3 py-1 hover:bg-gray-800">Chapter 7</a></li>
+      <li><a href="chapter 8.html" class="block px-3 py-1 hover:bg-gray-800">Chapter 8</a></li>
+      <li><a href="chapter 9.html" class="block px-3 py-1 hover:bg-gray-800">Chapter 9</a></li>
+      <li><a href="chapter 10.html" class="block px-3 py-1 hover:bg-gray-800">Chapter 10</a></li>
+    </ul>
+
+  </div> -->
+
+
+
+        <!-- <div class="dropdown">
+          <button>Others ▾</button>
+          <div class="dropdown-menu">
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="chapter 7.html">Chapter 7</a>
+            <a href="chapter 8.html">Chapter 8</a>
+            <a href="chapter 9.html">Chapter 9</a>
+            <a href="chapter 10.html">Chapter 10</a>
+          </div>
+        </div> -->
+      <!-- </div>
+    </div>
+  </div>
+
+    <script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Optional: Close dropdown when clicking outside
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script> -->
+  <!-- <div class=" text-white" style="background-image: url('maido12.jpg');">
+  <div class="flex flex-wrap justify-between items-center px-6 py-4 bg-black bg-opacity-50">
+    <h1 class="text-2xl font-semibold">Maida Website</h1>
+    <nav class="space-x-4 text-sm sm:text-base font-semibold">
+      <a href="home.html" class="text-white hover:underline border-b-4 border-white pb-1">Home</a>
+      <a href="about%20me.html" class="text-white hover:underline">About Me</a>
+      <a href="about%20jus.html" class="text-white hover:underline">About Jus</a>
+      <a href="about%20village.html" class="text-white hover:underline">About Village</a>
+      <a href="contact.html" class="text-white hover:underline">Contact</a>
+          <div class="relative">
+        <button id="dropdownButton" class="hover:underline focus:outline-none">Others ▾</button>
+        <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-black shadow-lg rounded-md mt-2 w-40 py-2 z-50">
+          <li><a href="chapter6.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 6</a></li>
+          <li><a href="chapter 7.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 7</a></li>
+          <li><a href="chapter 8.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 8</a></li>
+          <li><a href="chapter 9.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 9</a></li>
+          <li><a href="chapter 10.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 10</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+  <script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Optional: Close dropdown when clicking outside
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+
+  </div>
+
+  </div> -->
+
+
+  <div class="section-box">
+    
+    <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">9.1</h1>
+        <div class="responsive-table" id="maida2">
+    <div class="responsive-table font-bold" >
+      <table border="1" style="text-decoration: underline;text-align: center;color: #000; font-weight: bold; ">
+        <caption style="font-weight: bold;">School History</caption>
+        <tr style="font-weight: bold;">
+          <th>School Attended</th>
+          <th>Years</th>
+          <th>Degree Awarded</th>
+        </tr>
+        <tr>
+          <td>Schaumburg High School</td>
+          <td>2012&mdash;2016</td>
+          <td>High School Diploma</td>
+        </tr>
+        <tr>
+          <td>Harper College</td>
+          <td>2016&mdash;2017</td>
+          <td>Web Developer Certificate</td>
+        </tr>
+      </table> 
+    </div>
+  </div>
+
+
+
+
+     <!-- <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">9.1</h1>
+            <div class="responsive-table" id="maida2">
+                  <div class="responsive-table font-bold" >
+
+
+    <table border="1">
+<caption>School History</caption>
+      <tr>
+        <th>School Attended</th>
+        <th>Years</th>
+        <th>Degree Awarded</th>
+    </tr>
+    <tr>
+        <td>Schaumburg High School</td>
+        <td>2012&mdash;2016</td>
+        <td>High School Diploma</td>
+    </tr>
+    <tr>
+        <td>Harper College</td>
+        <td>2016&mdash;2017</td>
+        <td>Web Developer Certificate</td>
+    </tr>
+</table> -->
+</div>
+
+
+
+    <!-- <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">9.1</h1>
+        <div class="responsive-table" id="maida2">
+    <div class="responsive-table font-bold" >
+      <table border="1" style="text-decoration: underline;text-align: center;color: #000; font-weight: bold; ">
+        <caption style="font-weight: bold;">School History</caption>
+        <tr style="font-weight: bold;">
+          <th>School Attended</th>
+          <th>Years</th>
+          <th>Degree Awarded</th>
+        </tr>
+        <tr>
+          <td>Schaumburg High School</td>
+          <td>2012&mdash;2016</td>
+          <td>High School Diploma</td>
+        </tr>
+        <tr>
+          <td>Harper College</td>
+          <td>2016&mdash;2017</td>
+          <td>Web Developer Certificate</td>
+        </tr>
+      </table> 
+    </div>
+  </div> -->
+
+
+  <div class="section-box">
+       <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">9.2</h1>
+        <div class="responsive-table" id="maida2">
+    <div class="responsive-table"> 
+
+    <table border="1">
+     <tr>
+        <td rowspan="3">Cana Island Lighthouse</td>
+		<td>Built: 1869</td>
+    </tr>
+    <tr>
+        <td>Automated: 1944</td>
+    </tr>
+	<tr>
+        <td>Tower Height: 65 feet</td>
+    </tr>
+</table>
+
+    <!-- <h1 style="text-decoration: underline; color: black; text-align: center; font-weight: bold;">9.2</h1>
+        <div class="responsive-table" id="maida2">
+    <div class="responsive-table">
+      <table border="2" style="font-weight: bold;">
+        <tr>
+          <td rowspan="3">Cana Island Lighthouse</td>
+          <td>Built: 1869</td>
+        </tr>
+        <tr><td>Automated: 1944</td></tr>
+        <tr><td>Tower Height: 65 feet</td></tr>
+      </table>
+    </div>
+  </div> -->
+  </div>
+  </div>
+  </div>
+
+  <div class="section-box">
+    <h1 style="text-decoration: underline; color: black; text-align: center;font-weight: bold;">9.3</h1>
+    <div class="responsive-table" id="maida1">
+      <table border="1">
+        <caption>Lighthouse Island Bistro Specialty Coffee Menu</caption>
+        <tr>
+          <th>Specialty Coffee</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr class="altrow">
+          <td>Lite Latte</td>
+          <td>Indulge in a shot of espresso with steamed, skim milk.</td>
+          <td>$3.50</td>
+        </tr>
+        <tr>
+          <td>Mocha Latte</td>
+          <td>Choose dark or milk chocolate with steamed milk.</td>
+          <td>$4.00</td>
+        </tr>
+        <tr class="altrow">
+          <td>MCP Latte</td>
+          <td>A luscious mocha latte with caramel and pecan syrup.</td>
+          <td>$4.50</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-box">
+    
+    <h1 style="text-decoration: underline; color: black; text-align: center;">9.4</h1>
+    <div class="responsive-table" id="maida1">
+     <table border="1" id="w1"> 
+ <caption>Lighthouse Island Bistro Specialty Coffee Menu</caption>
+   <tr>
+     <th>Specialty Coffee</th>
+	 <th>Description</th>
+     <th>Price</th>
+  </tr>
+  <tr>
+     <td>Lite Latte</td>
+     <td>Indulge in a shot of espresso with steamed, skim milk. </td>
+	 <td>$3.50</td>
+  </tr>
+  <tr>
+     <td>Mocha Latte</td>
+     <td>Choose dark or milk chocolate with steamed milk.</td>
+	 <td>$4.00</td>
+   </tr>
+    <tr>
+     <td>MCP Latte</td>
+     <td>A luscious mocha latte with caramel and pecan syrup. </td>
+	 <td>$4.50</td>
+  </tr>
+</table>
+</div>
+
+  </div>
+
+</body>
+</html>

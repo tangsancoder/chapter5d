@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DK website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/logo deka canva.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="chap8.css">
+
+</head>
+<body class="bg-[#e1f4f7] font-sans">
+
+  <!-- Header -->
+
+<header class="bg-white shadow p-4 flex justify-between items-center flex-wrap">
+  <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_ copy.jpg" alt="DK Logo" class="rounded-lg shadow w-20" />
+
+  <nav class="flex items-center space-x-4 text-sm md:text-base relative">
+    <a href="#" class="text-teal-800 font-semibold">Home</a>
+    <a href="/About-me.htm" class="hover:underline">About Me</a>
+    <a href="/about-JUS.html" class="hover:underline">About Jamacad</a>
+    <a href="/About-xfdey.html" class="hover:underline">About Xfadeyda</a>
+    <a href="/About-Content.htm" class="hover:underline">Content</a>
+
+
+
+    <!-- Dropdown with JavaScript toggle -->
+    <div class="relative">
+      <button id="dropdownButton" class="hover:underline focus:outline-none">Others ▾</button>
+
+      <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-white shadow-lg rounded-md mt-2 w-40 py-2 z-50">
+        <li><a href="chapter 6.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 6</a></li>
+        <li><a href="ch.7.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 7</a></li>
+        <li><a href="chapter 8.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 8</a></li>
+        <li><a href="chapter 9.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 9</a></li>
+        <li><a href="chapter 10.html" class="block px-4 py-2 hover:bg-gray-100">Chapter 10</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<!-- JavaScript for toggle -->
+<script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Optional: Close dropdown when clicking outside
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+
+<section id="practice1" class="practice-section">
+    <h2 style="text-align: center;text-decoration: underline; color: black;"> practice 8.1</h2>
+     <header>
+    <h1>Flexbox Gallery</h1>
+  </header>
+  <main> 
+ 	 <div id="gallery">
+	   <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+	   <img src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+	   <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+	   <img src="bird4.jpg" width="200" height="150" alt="Rock Wren">
+	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle">
+	 </div>
+	 
+  </main>
+
+</section>
+<section id="practice2" class="practice-section">
+    <h2 style="color: #000; text-align: center; text-decoration: underline;"> practice 8.2</h2>
+      <header>
+    <h1>Lighthouse Bistro</h1>
+  </header>
+  <div id="content">
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+   <aside>
+       <figure>
+         <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+         <figcaption>Cana Island Lighthouse</figcaption>
+	   </figure>
+   </aside>
+  <main> 
+     <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+ </main>
+
+   </div>
+     <footer>Copyright &copy; 2020     </footer>
+</section>
+<!----section practice 8.3a-->
+<section id="practice3a" class="practice-section">
+    <h2 style="color: #000;text-decoration: underline; "> practice 8.3.1</h2>
+     <header>
+    <h1>Grid Gallery</h1>
+  </header>
+  <main> 
+ 	 <div id="gallery">
+	   <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+	   <img src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+	   <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+	   <img src="bird4.jpg" width="200" height="150" alt="Rock Wren"> 
+	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle"> 
+	 </div>
+  </main>
+</section>
+<!----section 8.3b-->
+<section id="practice3b" class="practice-section">
+    <h2 style="color: #000;text-decoration: underline; "> practice 8.3.2</h2>
+      <header>
+    <h1>Grid Gallery</h1>
+  </header>
+  <main> 
+ 	 <div id="gallery">
+	   <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+	   <img src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+	   <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+	   <img src="bird4.jpg" width="200" height="150" alt="Rock Wren">
+	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle">
+	 </div>
+  </main>
+</section>
+<!---section 8.4-->
+<section id="practice4" class="practice-section">
+    <h2 style="color: #fff;text-decoration: underline;text-align: center; "> practice 8.4</h2>
+    <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+  <main>	
+    <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+    <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+  </main>
+    <footer>Copyright &copy; 2025 Deka
+    </footer>
+  </div>
+</section>
+<!--section 8.5a flex-->
+<section id="practice5a" class="practice-section">
+    <h2 style="color: #000;text-decoration: underline; "> practice 8.5.1</h2>
+    <header>
+  <h1>Centered Heading</h1>
+</header>
+<main>
+Additional page content and navigation go here
+</main>
+</section>
+<br>
+<!---section 8.5b grid-->
+<section id="practice5b" class="practice-section">
+    <h2 style="color: #000; text-decoration: underline;"> practice 8.5.2</h2>
+    <header>
+  <h1>Centered Heading</h1>
+</header>
+<main>
+Additional page content and navigation go here
+</main>
+</section>
+<!-- section 8.5c grid -->
+ <section id="practice5b" class="practice-section">
+    <h2 style="color: #000;">Practice 8.5c </h2>
+    <header>
+  <h1>Centered Heading</h1>
+</header>
+<main>
+Additional page content and navigation go here
+</main>
+</section> 
+
+
+<!---section 8.6 -->
+<section id="practice6" class="practice-section">
+    <h2 style="text-decoration: underline; color: white; text-align: center; "> practice 8.6</h2>
+    <div id="wrapper">
+  <header>
+    <h1 style="text-align: center;">Lighthouse Bistro</h1>
+  </header>
+    <nav>
+	<ul>
+      <li id="page">Home</li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>    
+  <main>
+ 	<h2>Locally Roasted Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast free-trade coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p> 
+    <br>
+
+
+    <aside>
+        <figure>
+    <img src="lighthouse.jpg" width="250" height="355" alt="Lighthouse Island">
+        </figure>
+  </aside>
+  </main>
+
+
+
+
+
+
+
+  <!-- <aside>
+    <figure>
+    <img src="lighthouse.jpg" width="250" height="355" alt="Lighthouse Island">
+    </figure>
+  </aside> -->
+  <footer>
+	Copyright &copy; 2025
+  </footer>
+ </div>
+</section>
+
+
+<!--section 8.7-->
+<section id="practice7" class="practice-section">
+    <h2 style=" text-decoration: underline; color: white;  text-align: center;"> practice 8.7</h2>
+    <div id="wrapper">
+  <header>
+    <h1>Lighthouse Bistro</h1>
+  </header>
+    <nav>
+	<ul>
+      <li id="page">Home</li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+  <main>
+ 	<h2>Locally Roasted Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast free-trade coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p> 
+  </main>
+   <aside>
+    <figure>
+    <img src="lighthouse.jpg" width="250" height="355" alt="Lighthouse Island">
+    </figure>
+  </aside> 
+  <footer>
+	Copyright &copy; 2025
+  </footer>
+ </div>
+</section>
+
+
+<!--section 8.8-->
+<section id="practice8" class="practice-section">
+    <h2 style="text-decoration: underline; color: black;"> practice8.8</h2>
+    <div id="wrapper">
+  <!-- <header>
+    <h1>Casita Sedona</h1>
+  </header>   -->
+  <header id="practice8">
+  <h1>Casita Sedona</h1>
+</header>
+
+
+
+  <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="rooms.html">Rooms</a></li>
+     <li><a href="specials.html">Specials</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav>
+    <main>   
+	<h2>Located in the Heart of Sedona</h2>
+    <p>At Casita Sedona Bed &amp; Breakfast you&rsquo;ll be close to art galleries, shops, restaurants, hiking trails, and tours. Ride the free trolley to shops and galleries.</p>
+    <h2>Luxurious Rooms </h2>
+    <p>Stay in a well-appointed room at Casita Sedona with your own fireplace, king-size bed, balcony overlooking the red rocks, private bath with shower, and whirlpool tub for two. Choose from the Canyon, Javelina, Manzanita, Thunder Mountain, and Schnebly rooms &mdash; each is unique and sure to be a high point of your vacation experience.</p>
+  	<h2>Hearty Breakfast</h2>
+    <p>Each day begins with a hearty breakfast that includes your choice of belgian waffles, pumpkin french toast, or quiche. Fresh fruit, yogurt, juice, and coffee are always available.</p>
+	<h2>About Your Hosts</h2>
+	<p>Your hosts, Melanie and Greg Tortuga, are long-time Sedona residents who love to share their knowledge of the Sedona area with their guests. Melanie is an author and artist. Greg has years of experience leading jeep tours and guiding hikes in and around Sedona.</p>
+   </main> 
+      <aside>
+     <img src="pools.jpg" alt="Pools of water in the rock">
+	 <h2>Guided Hikes</h2>
+	 <p>Casita Sedona offers a free guided hike each week for guests. Explore the Seven Sacred Pools along the Soldiers Pass Trail.</p>
+   </aside>
+   <footer>Copyright &copy; 2025
+   </footer>
+</div>
+</section>
+
+<!--section 8.9-->
+<section id="practice9"class="practice-section" >
+    <h2 style="text-decoration: underline; color: black;"> practice 8.9</h2>
+    <h1 style="color: rgb(16, 112, 16);">Picture Element</h1>
+
+<picture>
+        <source media="(min-width: 1200px)" srcset="large.jpg">
+        <source media="(min-width: 800px)" srcset="medium.jpg">
+		<source media="(min-width: 320px)" srcset="small.jpg">
+        <img src="fall.jpg" alt="water wheel"> 
+</picture>
+</section>
+
+<section id="practice10" class="practice-section">
+    <h2 style="text-decoration: underline; color: black;">practice 8.10</h2>
+    <h1>Image Element</h1>
+<img src="small.jpg" 
+     sizes="100vw"
+     srcset="small.jpg 1200w, medium.jpg 800w, small.jpg 320w"
+	 alt="water wheel" >
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

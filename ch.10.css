@@ -1,0 +1,138 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #dc7373;
+    }
+
+    section {
+              background-color: #f1e1c2;
+      /* background-color: #605858; */
+      border: 1px solid #ddd;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      /* text-align: center; */
+      
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+
+    /* Part 1 */
+    #newsletter-form input[type="text"] {
+      width: 250px;
+               border: 2px solid #000;
+    }
+
+
+
+    
+
+
+        
+          /* #newsletter-form input {
+      display: block;
+      margin-bottom: 20px;
+               border: 1px solid #000;
+    } */
+
+
+
+    /* Part 2 & 3 */
+    #contact-form label,
+    #contact-form-alt label {
+      display: block;
+      margin-top: 10px;
+      
+    }
+/* 
+    #contact-form label {
+      display: block;
+      margin-top: 20px;
+    } */
+
+    #contact-form input[type="text"] {
+      width: 250px;
+               border: 2px solid #000;
+    }
+     #contact-form-alt input[type="text"] {
+      width: 250px;
+               border: 2px solid #000;
+    }
+
+              /* #contact-form    input {
+      display: block;
+      margin-bottom: 10px;
+               border: 0px solid #000;
+    } */
+
+        /* #required-form input {
+      display: block;
+      margin-bottom: 20px;
+               border: 1px solid #000;
+    } */
+
+
+    /* Part 4 */
+    #styled-form {
+      background-color: #eaeaea;
+      width: 350px;
+      padding: 10px;
+    }
+
+    #styled-form label {
+      float: left;
+      clear: left;
+      display: block;
+      width: 100px;
+      text-align: right;
+      padding-right: 10px;
+      margin-top: 10px;
+
+    }
+
+    #styled-form input, #styled-form textarea {
+      margin-top: 10px;
+      display: block;
+    }
+
+    #styled-form input[type="submit"] {
+      margin-left: 100px;
+
+    }
+
+    /* Part 5 & 6 - Grid styles */
+    @supports (display: grid) {
+      #grid-form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em;
+        background-color: #EAEAEA;
+        min-width: 30em;
+        width: 30%;
+        height: 250px;
+        padding: 2em;
+      }
+
+      #grid-form input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 10em;
+        margin-left: 0;
+        
+      }
+    }
+
+    /* Part 7 */
+    #required-form label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    #required-form input {
+      display: block;
+      margin-bottom: 20px;
+               border: 1px solid #000;
+    }

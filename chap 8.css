@@ -1,0 +1,959 @@
+         .hero {
+      background-image: url('/maido12.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding-bottom: 10px;
+    }
+        .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: #333; */
+      padding: 15px 30px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-button {
+      background: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+
+    .dropdown-button:focus {
+      outline: none;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #000;
+      min-width: 150px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .dropdown-menu.show {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #444;
+    }
+
+    .dropdown-button.active {
+      text-decoration: underline;
+    }
+
+
+
+
+/*  
+
+
+
+
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+       background-color: #fefefe;  
+     }  
+
+     .hero {
+      background-image: url('maido12.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding-bottom: 30px;
+    } 
+
+     .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .site-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 4px solid transparent;
+      padding-bottom: 5px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-links .active {
+      border-bottom-color: white;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+     .dropdown button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      padding: 10px 0;
+      margin-top: 5px;
+      border-radius: 5px;
+      min-width: 160px;
+      z-index: 1000;
+    } 
+ 
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: gray;
+    } 
+
+     .dropdown:hover .dropdown-menu {
+      display: block;
+    }    */
+
+
+
+
+/* General Body Styles: Applied globally, with specific section styles overriding where needed. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fff; /* Updated: Darker background color to match the image */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Common Paragraph Style */
+p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+h2{
+    text-align: center;
+    color: #fff;
+}
+/* General styles for all practice sections */
+.practice-section {
+    padding: 20px; /* General padding for all sections */
+    margin: 20px auto; /* Center sections horizontally with vertical spacing */
+    max-width: 90%; /* Max width for better readability on larger screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    /* border: 1px solid #f3c5c5; */
+    border-radius: 8px;
+    align-items: center;
+    /* background-color: #903f3f; Default background for section content */
+    /* box-shadow: 0 4px 8px #f5f2f2ec; Subtle shadow for depth */
+    overflow: hidden; /* Clear floats within sections */
+}
+/* #practice2{
+    width: 50%;
+    align-items: center;
+} */
+/* Main Navigation Bar for the combined page */
+nav.main-nav {
+    background-color: snow;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+nav.main-nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Allows padding and margin, and proper centering */
+}
+nav.main-nav a:hover {
+    background-color: #ccc;
+    transform: translateY(-2px); /* Slight lift on hover */
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block; /* Allows side-by-side with other nav items */
+    margin: 0 8px; /* Match margin with other nav links */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent; /* Transparent background */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em; /* Inherit font size */
+    font-family: inherit; /* Inherit font family */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.dropbtn .fas.fa-caret-down {
+    margin-left: 8px; /* Space between text and caret icon */
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px;
+    left: 50%; /* Center dropdown content relative to its button */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    overflow: hidden; /* Ensures border-radius applies to children */
+    padding: 5px 0; /* Add some vertical padding inside dropdown */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left within dropdown */
+    transition: background-color 0.2s ease;
+    /* Reset styles that might be inherited from main-nav a */
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #000;
+    transform: none; /* Disable transform on hover for dropdown items */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* styles for practice 8.1 */
+#practice1 {
+    background-color: white;
+}
+#practice1  header { text-align: center; }
+	 
+#practice1 #gallery { display: flex; 
+           flex-direction: row;
+		   flex-wrap: wrap; 
+		   justify-content: space-around; 
+}
+		 
+#practice1 img { margin: 1em;
+      box-shadow: 10px 10px 10px #fff;
+} 
+
+/* style for pactice 8.2 */
+#practice2 #content { display: flex; }   
+#practice2 nav      { flex: none; 
+         background-color: #B3C7E6; }
+#practice2 main     { flex: 6; 
+           min-width: 20em; 
+           background-color: #FFFFFF; }
+#practice2 aside    { flex: 4; 
+            background-color: #EAEAEA; }
+
+#practice2 nav { order: 1;}
+#practice2 main { order: 2; }
+#practice2 aside { order: 3; }
+
+#practice2 {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #000;
+    font-family:Verdana, Arial, sans-serif; 
+    margin-left: auto;
+    margin-right: auto;
+}		
+#practice2 nav ul { list-style-type: none;
+         padding: 1em; }
+#practice2 nav a { text-decoration: none;
+        padding: 1em;
+		font-weight: bold;
+}
+#practice2 header { background-color: #869DC7;
+        color: #00005D; 
+		background-image: url(light.gif); 
+		background-repeat: no-repeat;
+		padding: 2em 0 2em 10em;
+		font-size: 120%;
+}
+#practice2 h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+     text-align: left;
+}
+#practice2 nav { float: left; }
+#practice2 main{ padding: 1em; }
+#practice2 aside { float: right; padding: 1em; }
+#practice2 figure { text-align: center; }
+#practice2 figcaption { font-style: italic; text-align: center;}
+#practice2 footer { background-color: #869DC7;
+         font-size:70%;
+         text-align: center;
+         padding: 2em;
+		 clear: both;
+}
+#practice2 header, main, nav, figure, footer { display: block; }
+
+/* styles for pactice 8.3a */
+#practice3a { box-sizing: border-box; 
+    background-color: #fefefe;
+
+}
+#practice3a header { text-align: center; } 
+#practice3a #gallery {   display: grid; 
+             grid-template-columns: repeat(3, 200px);
+			 grid-template-rows: auto;
+             grid-gap: 2em;	
+             gap: 2em;			 
+}
+/* styles for pactice 8.3b */
+#practice3b { box-sizing: border-box;
+    background-color: #fefefe;
+}
+#practice3b header { text-align: center; } 
+#practice3b #gallery {   display: grid; 
+             grid-template-columns: repeat(auto-fill, 200px);
+			 grid-template-rows: auto;
+             grid-gap: 2em;	
+             gap: 2em;	 
+}
+/* styles for practice 8.4 */
+#practice4 {font-family:Verdana, Arial, sans-serif;
+      background-color: #00005D;
+}
+#practice4 #wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:940px;
+} 
+#practice4 nav { float: left;
+	          width: 150px;
+} 
+#practice4 nav ul { list-style-type: none;
+         padding: 10px; }
+#practice4 nav a { text-decoration: none;
+        padding: 10px;
+		font-weight: bold;
+}
+#practice4 main { margin-left: 155px;
+               background-color: #ffffff;
+               color: #000000;
+			   padding: 1em; 
+} 
+#practice4 header { background-color: #869dc7;
+        color: #00005D; 
+		background-image: url(light.gif); 
+		padding: 1.5em 0 2em 190px;
+		font-size: 130%;
+		min-width: 750px;
+		background-repeat: no-repeat;
+		font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+#practice4 h1 { margin-bottom: 0; }
+#practice4 h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+
+    text-align: left;
+}
+
+#practice4 #floatright { margin: 10px;
+             float: right;
+}
+
+#practice4 footer {font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding-bottom:20px;
+}
+#practice4 header, nav, main, footer { display: block; }
+@supports (display: grid) {
+   #wrapper { display: grid;
+              grid-template-columns: 150px 1fr;
+              grid-template-rows: 160px auto auto; }
+    header { grid-row: 1 / 2; grid-column: 1 / 3; }
+    nav { grid-row: 2 / 3; grid-column: 1 / 2; }
+    main { grid-row: 2 / 3; grid-column: 2 / 3; }
+    footer { grid-row: 3 / 4; grid-column: 1 / 3; }
+	main { margin-left: 0; }
+}
+
+/* styles for practice 8.5a part one */
+#practice5a { margin: 0; 
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+
+}
+#practice5a header {  display: flex;
+          min-height: 100vh;
+          justify-content: center;
+          align-items: center;
+          background-color: #227093;
+}
+#practice5a h1 {   margin: auto;
+	   color: #FFFFFF;
+       font-family: Arial, Heveltica, sans-serif;
+}
+/* styles for practice 8.5b part two */
+#practice5b  { margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;    
+}
+#practice5b header {  display:grid;
+          min-height: 100vh;
+          justify-content: center;
+          align-items: center;
+          background-image: url(lake.jpg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+}
+#practice5b h1 {   margin: auto;
+	   color: #FFFFFF;
+       font-family: Arial, Heveltica, sans-serif;
+}
+
+/* styles for practice 8.5c part three */
+/* #practice5c  { margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;    
+}
+#practice5c header {  display:grid;
+          min-height: 100vh;
+          margin: auto;
+          background-image: url(lake.jpg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+}
+#practice5c h1 {   margin: auto;
+	   color: #FFFFFF;
+       font-family: Arial, Heveltica, sans-serif;
+} */
+
+
+
+
+
+/* General Body Styles: Applied globally, with specific section styles overriding where needed. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000; /* Updated: Darker background color to match the image */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Common Paragraph Style */
+p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+h2{
+    text-align: center;
+    color: #000;
+}
+/* General styles for all practice sections */
+.practice-section {
+    padding: 20px; /* General padding for all sections */
+    margin: 20px auto; /* Center sections horizontally with vertical spacing */
+    max-width: 90%; /* Max width for better readability on larger screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    border: 3px solid #444;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fff; /* Default background for section content */
+    box-shadow: 0 4px 8px rgba(251, 248, 248, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Clear floats within sections */
+}
+/* #practice2{
+    width: 50%;
+    align-items: center;
+} */
+/* Main Navigation Bar for the combined page */
+nav.main-nav {
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+nav.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Allows padding and margin, and proper centering */
+}
+nav.main-nav a:hover {
+    background-color: #ccc;
+    transform: translateY(-2px); /* Slight lift on hover */
+
+}
+
+/* header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block; /* Allows side-by-side with other nav items */
+    margin: 0 8px; /* Match margin with other nav links */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent; /* Transparent background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em; /* Inherit font size */
+    font-family: inherit; /* Inherit font family */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.dropbtn .fas.fa-caret-down {
+    margin-left: 8px; /* Space between text and caret icon */
+    color: #fff;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px;
+    left: 50%; /* Center dropdown content relative to its button */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    overflow: hidden; /* Ensures border-radius applies to children */
+    padding: 5px 0; /* Add some vertical padding inside dropdown */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left within dropdown */
+    transition: background-color 0.2s ease;
+    /* Reset styles that might be inherited from main-nav a */
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #000;
+    transform: none; /* Disable transform on hover for dropdown items */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* styles for practice 8.6 */
+#practice6 { box-sizing: border-box;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+                  /* background-color:#fff; */
+                        background-color: #00005D; 
+}
+
+body {font-family: Verdana, Arial, sans-serif;
+}
+ 
+#practice6  #wrapper { background-color:  #B3C7E6; 
+}
+
+#practice6  header { color: #00005D; 
+        background-color: #869DC7;
+		background-image: url(light.gif);
+	    background-repeat: no-repeat;		
+		background-size: auto 100%;
+        padding: .5em 0 .5em 5.5em;
+}
+#practice6  main {   background-color: #FFFFFF;
+         color: #000000;
+	     padding: 1em; 
+}
+#practice6  aside { text-align: center; }
+#practice6  footer {  background-color: #869DC7;
+         font-size:70%;
+         text-align: center;
+         padding: 0.5em 0;
+}
+#practice6  img { padding: 1em; }
+#practice6  h2 { color: #869DC7;
+ font-family: Arial, sans-serif; 
+    text-align: left; }
+
+/* Styles to configure navigation links as horizontal areas */
+#practice6  nav ul { list-style-type: none;
+         padding-left: 0; 
+		 border-top: 1px solid #EEEEEE;
+}
+#practice6  nav li { border-bottom: 1px solid #EEEEEE;  
+         text-align: center;
+		 padding-top: .5em;
+		 padding-bottom: .5em;
+}
+#practice6  nav a { text-decoration: none;
+		font-weight: bold;
+}
+#practice6  nav a:link { color: #00005D; }
+#practice6  nav a:hover { color: #FF0000; }
+/* make the current page's link look different */
+#practice6  nav #page { font-weight: bold;
+            color: #FEFEFE; }
+
+ 
+
+
+
+/* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
+#practice6  header, nav, main, footer, aside, figure { display: block; }
+
+/* Medium Display */
+@media (min-width: 600px) {
+#practice6  nav li { display: inline-block;
+          width: 7em;
+          padding: 0.5em;
+		  border: none; 
+         }
+#practice6  nav ul { text-align: center; }
+#practice6   main { float: left;
+        width: 55%; }
+#practice6  aside { margin-left: 55%; }
+#practice6  footer { clear: both; }
+ }
+ 
+/* Large Display */
+@media (min-width: 1024px) {
+#practice6  nav li { display: block; }
+ 
+#practice6  nav { float: left; }
+  #wrapper { width: 80%;
+		     margin: auto;
+		     max-width: 1200px;
+  }
+ #practice6  body { background-color: #000066; }
+}
+
+/* styles for practice 8.7 */
+#practice7 { box-sizing: border-box;
+    margin-left: auto;
+    margin-left: auto;
+    font-family: Verdana, Arial, sans-serif;
+              /* background-color:#fff;  */
+                    background-color: #00005D;
+    
+}
+#practice7 #wrapper { background-color:  #B3C7E6; 
+}
+
+#practice7 header { color: #00005D; 
+        background-color: #869DC7;
+		background-image: url(light.gif);
+	    background-repeat: no-repeat;		
+		background-size: auto 100%;
+        padding: .5em 0 .5em 5.5em;
+}
+#practice7 main {   background-color: #FFFFFF;
+         color: #000000;
+	     padding: 1em; 
+}
+#practice7 aside { text-align: center; }
+
+#practice7 footer {  background-color: #869DC7;
+         font-size:70%;
+         text-align: center;
+         padding: 0.5em 0;
+}
+
+#practice7 h2 { color: #869DC7;
+ font-family: Arial, sans-serif; 
+ text-align: left;
+ }
+#practice7 img { padding: 1em; }
+
+/* Styles to configure navigation links as horizontal areas */
+#practice7 nav ul { list-style-type: none;
+         padding-left: 0; 
+		 border-top: 1px solid #EEEEEE;
+}
+#practice7 nav li { border-bottom: 1px solid #EEEEEE;  
+         text-align: center;
+		 padding-top: .5em;
+		 padding-bottom: .5em;
+}
+#practice7 nav a { text-decoration: none;
+		font-weight: bold;
+}
+#practice7 nav a:link { color: #00005D; }
+#practice7 nav a:hover { color: #FF0000; }
+
+/* make the current page's link look different */
+#practice7 nav #page { font-weight: bold;
+            color: #FEFEFE; }
+
+
+/* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
+#practice7 header, nav, main, footer, aside, figure { display: block; }
+
+@media (min-width: 600px) {
+     #practice7 #wrapper { display: grid; 
+	             grid-template-columns: 55% auto;
+	             grid-template-rows: auto auto auto auto; }
+	  #practice7 header { grid-row: 1 / 2; grid-column: 1 / 3; }
+	 #practice7 nav    { grid-row: 2 / 3; grid-column: 1 / 3; }
+	 #practice7 main   { grid-row: 3 / 4; grid-column: 1 / 2; }
+	  #practice7 aside  { grid-row: 3 / 4; grid-column: 2 / 3; }
+	  #practice7 footer { grid-row: 4 / 5; grid-column: 1 / 3; }
+	  #practice7 nav ul { display: flex; 
+	           flex-direction: row; 
+	           flex-wrap: nowrap; 
+	           justify-content: space-around; }
+	  #practice7 nav ul li { border-bottom: none; } 
+}
+
+@media (min-width: 1024px) {
+        #practice7 body     { background-color: #000066; }
+		#practice7 nav ul { display: flex; 
+	           flex-direction: column; 
+	           flex-wrap: nowrap; }
+        #practice7 #wrapper { width: 80%; 
+                   margin: auto; max-width: 1200px; 
+                   display: grid; 
+	               grid-template-columns: 150px auto auto;
+	               grid-template-rows: auto auto auto ; }
+					#practice7 header { grid-row: 1 / 2; grid-column: 1 / 4; }
+					#practice7 nav    { grid-row: 2 / 3; grid-column: 1 / 2; }
+					#practice7 main   { grid-row: 2 / 3; grid-column: 2 / 3; }
+					#practice7 aside  { grid-row: 2 / 3; grid-column: 3 / 4; }
+					#practice7 footer { grid-row: 3 / 4; grid-column: 1 / 4; }
+} 
+
+/* styles for practice 8.8 */
+#practice8 { box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+          background-color:#0B8781; 
+
+
+}
+#practice8 #wrapper {  background-color: #F7F1E3; 
+            color: #0B8781; 
+}
+
+#practice8 h1, h2 { color: #2C2C54; }
+
+/* #practice8 header { background-image: url('/header.jpg');
+         background-repeat: no-repeat;  
+         background-size: cover;	
+         padding-top: 1px;		 
+} */
+
+header {
+  background-image: url('header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1px;
+}
+
+
+#practice8 {
+  background-image: url('header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1px;
+}
+
+#practice8 h1 { text-align: center;
+	 font-size: 300%;
+	 padding-bottom: 1em;
+	 text-shadow: 3px 3px 3px #E9FBFC;
+}
+#practice8 nav {   font-size: 120%; }
+
+#practice8 nav ul { padding-left: 0;
+         display: flex; 
+	     flex-direction: row; 
+	     flex-wrap: wrap; 
+	     justify-content: space-around; }	  
+#practice8 nav ul { list-style-type: none; }
+#practice8 nav li { width: 20%;
+		 min-width: 6em;
+	     font-size: 110%;
+		 text-align: center;
+		 background-color: #0C97A4; 
+		 margin: .5em;
+		 padding: .5em; }
+#practice8 nav a { text-decoration: none;}
+#practice8 nav a:link { color: #F7F1E3; }
+#practice8 nav a:visited { color: #FFB142; }
+#practice8 nav a:hover { color: #2C2C54; }
+
+#practice8 aside {  display: none; padding: 1em;}
+
+#practice8 main {   padding: 0 1em 1em;    }
+
+#practice8 footer { text-align: center;
+		 font-style: italic;
+		 padding: 1em; }
+#practice8 img { max-width: 100%; height: auto; }
+@media (min-width: 38em) {
+        #practice8 #wrapper { display: grid;
+            grid-template-columns: 70% 30%;
+		    grid-template-rows: auto; }
+	     #practice8 aside { display: block; }
+         #practice8 header { grid-row: 1 / 2; grid-column: 1 / 3; }
+         #practice8 nav    { grid-row: 2 / 3; grid-column: 1 / 3; }
+         #practice8 main   { grid-row: 3 / 4; grid-column: 1 / 2; }
+         #practice8 aside  { grid-row: 3 / 4; grid-column: 2 / 3; }
+         #practice8 footer { grid-row: 4 / 5; grid-column: 1 / 3; }
+}
+@media (min-width: 65em) {
+         #practice8  body { margin: 0; padding: 0; } 
+		 #practice8 nav ul { display: flex; 
+	           flex-direction: column; 
+	           flex-wrap: nowrap; }
+          #practice8 #wrapper { display: grid;
+		    width: 80%;
+			margin: auto;
+            grid-template-columns: 150px 1fr 30%;
+		    grid-template-rows: auto; }
+		  #practice8 aside { display: block; }
+          #practice8 header { grid-row: 1 / 2; grid-column: 1 / 4; }
+          #practice8 nav    { grid-row: 2 / 3; grid-column: 1 / 2; }
+          #practice8 main   { grid-row: 2 / 3; grid-column: 2 / 3; }
+          #practice8 aside  { grid-row: 2 / 3; grid-column: 3 / 4; }
+          #practice8 footer { grid-row: 3 / 4; grid-column: 1 / 4; }
+}
+
+/* styles for practice 8.10 */
+
+
+#practice9 { box-sizing: border-box;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+                  background-color:#fff; 
+}
+
+
+#practice10 { box-sizing: border-box;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+                  background-color:#fff; 
+}

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <title>Ch.7</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="ch.7.css">
+
+</head>
+</body>
+
+<header class="bg-white shadow p-4 flex justify-between items-center flex-wrap">
+  <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_.jpg" alt="DK Logo" class="rounded-lg shadow w-11" />
+
+  <nav class="flex items-center space-x-5 text-sm md:text-base relative">
+    <a href="#" class="text-teal-800 font-semibold">Home</a>
+    <a href="/About-me.htm" class="hover:underline">About Me</a>
+    <a href="/about-JUS.html" class="hover:underline">About Jamacad</a>
+    <a href="/About-xfdey.html" class="hover:underline">About Xfadeyda</a>
+    <a href="/About-Content.htm" class="hover:underline">Content</a>
+  
+
+  <!-- Others Dropdown -->
+  <div class="relative">
+    <button id="dropdownButton" class="hover:underline focus:outline-none text-sm md:text-base">Others▾</button>
+    <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-white shadow-lg rounded-md mt-1 w-36 py-1 z-50 text-sm">
+      <li><a href="chapter 6.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 6</a></li>
+      <li><a href="ch.7.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 7</a></li>
+      <li><a href="chapter 8.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 8</a></li>
+      <li><a href="chapter 9.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 9</a></li>
+      <li><a href="chapter 10.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 10</a></li>
+    </ul>
+
+  </div>
+
+</header>
+</nav>
+
+<!-- JavaScript for toggle -->
+<script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Main Content  -->
+    <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg">
+              <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 7.1</h1>
+      <!-- <h1 class="text-2xl font-bold mb-4">Welcome to the Coffee House</h1> -->
+      <!-- <p class="text-gray-700 mb-4">Enjoy our selection of the finest coffees from around the world.</p> -->
+      <!-- <p class="text-gray-600">Explore our menu and find your favorite brew!</p> -->
+    <div class="bg-white m-10 rounded-lg p-2">
+      
+<!-- 
+<body class="flex flex-col items-start p-20 space-y-9">
+
+<body class="flex flex-col items-start p-10 space-y-8"> -->
+
+  <!-- First box --><div class="p-10">
+
+  <!-- First box -->
+  <div class="w-64 h-64 bg-blue-100 border-2 border-black border-dashed p-4">
+    <p>This is the first box</p>
+  </div>
+
+  <!-- Second box with margin top -->
+  <div class="w-40 h-40 border-4 border-black p-4 mt-6">
+    <p>This is the second box</p>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  
+    <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg">
+              <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 7.l.l</h1>
+
+
+  <!-- Box weyn -->
+  <div class="w-64 h-64 bg-blue-100 border-2 border-black border-dashed p-4 relative">
+
+    <p>This is the first box</p>
+
+    <!-- Box yar gudaha ku jira -->
+    <div class="w-40 h-40 bg-white border-2 border-black p-4 absolute bottom-4 left-4">
+      <p>This is the second box</p>
+    </div>
+
+  </div>
+
+
+      </div>
+      
+<!--     Third box with margin top -->
+    <!-- <div class="w-48 h-48 bg-green-100 border-2 border-black p-4 mt-6">
+      <p>This is the third box</p> --> 
+  
+
+  <!-- <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg">
+              <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 7.2</h1> -->
+    <!-- <div class="bg-white m-10 rounded-lg p-2">
+        </div>
+    </div> --> 
+      
+
+
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg">
+              <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 7.2</h1>
+    <div class="bg-white m-10 rounded-lg p-2">
+
+ 
+<body class="bg-gray-30 p-6">
+  <div class="max-w-3xl mx-auto bg-white  overflow-hidden">
+  
+    <!-- Header -->
+    <div class="bg-green-700 px-6 py-4">
+      <h1 class="text-2xl font-bold text-yellow-300">Yellow Lady Slipper</h1>
+    </div>
+
+    <!-- Image + Text Box -->
+    <div class="flex flex-col sm:flex-row p-6 bg-yellow-100">
+      <img src="/yls.jpg" alt="Yellow Lady Slipper" class="w-full sm:w-48 h-auto object-cover rounded mb-4 sm:mb-0 sm:mr-4" />
+      <div class="flexjustify-start items-center">
+        <p class="text-lg">
+          The Yellow Lady Slipper grows in wooded areas and blooms in June each year.
+          The flower is a member of the orchid family.
+        </p>
+      </div>
+    </div>
+
+    <!-- Subheading -->
+    <div class="px-6 py-4">
+      <h2 class="text-xl font-semibold">Be Green When Enjoying Wildflowers</h2>
+    </div>
+
+    <!-- Body Text -->
+    <div class="px-6 pb-6">
+      <p>
+        Enjoy wild plants in their native surroundings. Protect their environment in all possible ways —
+        support organizations dedicated to preserving their habitat.
+      </p>
+    </div>
+
+  </div>
+
+
+      </div>
+      </div>
+
+
+
+
+
+
+
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg">
+<div class="bg-blue-900 h-full ">
+
+  <div class="max-w-5xl mx-auto min-h-screen flex flex-col bg-white">
+    <!-- Header -->
+    <header class="bg-purple-200 p-6 bg-center">
+      <h1 class="text-4xl font-bold text-white">Layout Example</h1>
+    </header>
+
+    <!-- Layout: Left Sidebar, Main Content, Right Sidebar -->
+    <div class="flex flex-1">
+      <!-- Sidebar Left -->
+      <!-- <aside class="w-48 bg-blue-600 p-4 text-white">
+         <nav class="space-y-2">
+          <a href="#" class="hover:underline">Home</a>
+          <a href="#" class="hover:underline">Page 1</a>
+          <a href="#" class="hover:underline">Page 2</a>
+        </nav> -->
+      <!-- </aside>  -->
+         
+  <ul class="list-none">
+    <li><a href="#" class="underline">Home</a></li>
+    <li><a href="#" class="underline">Page1</a></li>
+    <li><a href="#" class="underline">Page2</a></li>
+  </ul>
+</nav>
+      <!-- Main Content -->
+      <main class="flex-1 p-6">
+        <div class="bg-white p-6 rounded shadow   ">
+     
+          <h2 class="text-2xl font-bold mb-4">Page Heading</h2>
+          <p class="space-y-2">
+           This is a sentence. This is a sentence. This is a sentence. This is a sentence.<br>
+            This is a sentence. This is a sentence. This is a sentence. This is a sentence.<br>
+             This is a sentence. This is a sentence. This is a sentence. This is a sentence.<br>
+              This is a sentence. This is a sentence. This is a sentence. This is a sentence.<br>
+               This is a sentence. This is a sentence. This is a sentence. This is a sentence.<br>
+                This is a 
+           sentence. This is a sentence. This is a sentence. This is a sentence.
+          </p>
+        </div>
+      </main>
+
+      <!-- Sidebar Right -->
+      <!-- <aside class="w-48 bg-blue-600 p-4 text-white">
+        
+      </aside> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-200 p-4 italic text-center text-white">
+      Copyright © 2020
+    </footer>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  <!--section practice 7.4-->
+<section id="practice4" class="practice-section">
+    <h2 style="text-align: center;text-decoration: underline; color: black;"> practice 7.4</h2>
+    <div class="conta">
+        <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+    <nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+  <main>
+    <div class="content"> 
+      <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+    </div>
+    <footer>Copyright &copy; 2020
+    </footer>
+  </main>
+</div>
+    </div>
+</section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg">
+  <h1 class="text-xl font-semibold underline mb-4 text-center">Practice 7.5</h1>
+
+  <div class="bg-white m-10 rounded-lg p-2">
+    <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center drop-shadow-lg tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div>
+    
+          <div class="flex flex-1"> -->
+
+        <!-- Sidebar (Left) with right border only -->
+        <!-- <aside class="bg-blue-900 text-white w-1/6 p-4 border-r"> -->
+         
+ 
+
+    
+  <!-- < class="bg-white font-sans"> -->
+
+    <!-- Header -->
+  <!-- <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #aec9e8;
+      width: 200px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #003399;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      background: url('lighthouse.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .content {
+      display: flex;
+      padding: 20px;
+    }
+
+    .text-block {
+      flex: 2;
+    }
+
+    .text-block h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #759ec2;
+
+    }
+
+    .text-block p {
+      font-size: 1.4em;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .image-block {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+    } -->
+  <!-- </style> -->
+<!-- </head>
+<body> -->
+<!--section practice 7.5-->
+<section id="practice5" class="practice-section">
+    <h2 style="text-align: center;text-decoration: underline; color: black;"> practice 7.5</h2>
+    <div class="for">
+           <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+  <nav>
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+  </nav>
+  <main> 
+      <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+	<h2 style="text-align: left;">Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2  style="text-align: left;">Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2  style="text-align: left;">Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2  style="text-align: left;">Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+  </main>
+  <footer style="background-color:#b3c7e6 ;">Copyright &copy; 2020
+  </footer>
+</div>
+    </div>
+</section>
+
+
+
+<!-- section practice 7.6  -->
+<section id="practice6" class="practice-section">
+    <h2 style="color: white; text-decoration: underline; text-align: center;"> 7.6</h2>
+    <div class="six">
+        <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	</ul>
+    </nav>
+  <main>
+    <div class="content"> 
+      <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+    </div>
+    <footer>Copyright &copy; 2020
+    </footer>
+  </main>
+</div>
+    </div>
+</section>
+
+
+<section id="practice7" class="practice-section">
+    <h2 style="color: white; text-decoration: underline; text-align: center;"> practice 7.7</h2>
+    <div class="seven">
+        <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+  <!-- <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="rooms.html">Menu</a></li>
+     <li><a href="directions.html">Directions</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav>  -->
+  <main> 
+   	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+     <img src="lighthouseisland.jpg" width="250" height="355" alt="Lighthouse Island" id="floatright">
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery!</p>
+	<p>The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+   </main> <!-- end of main content -->
+   <footer>Copyright &copy; 2020
+   </footer>
+  </div> 
+    </div>
+</section>
+
+
+<!-- section practice 7.8 -->
+ <section id="practice8" class="practice-section">
+    <h2 style="color: white; text-decoration: underline; text-align: center;"> practice 7.8</h2>
+   <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+  <!-- <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="rooms.html">Menu</a></li>
+     <li><a href="directions.html">Directions</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav>  -->
+  <main> 
+   	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+     <img src="lighthouseisland.jpg" width="250" height="355" alt="Lighthouse Island" id="floatright">
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery!</p>
+	<p>The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+   </main> end of main content
+   <footer>Copyright &copy; 2020
+   </footer>
+  </div> 
+ </section> 
+
+        
+
+
+
+
+<!-- 
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg   bg-blue-900 text-center text-sm italic p-2">
+ 
+  <h1 class="text-xl font-semibold underline mb-4 text-center text-white">Practice 7.6</h1>
+  <div class="bg-blue m-10 rounded-lg p-2">
+    <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center drop-shadow-lg tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div>
+    <div class="flex flex-1">
+
+         <div class="bg-blue-200 text-center font-bold text-white italic p-4">
+          <nav class="sidebar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Directions</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        
+       
+         </div>
+      <main class="bg-gray-100 flex-1 p-6 border-l w-72 ml-auto text-right">
+        <section class="content">
+          <div class="text-block
+">
+            <h2>Locally Roasted Free-Trade Coffee</h2>
+            <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+
+            <h2>Specialty Pastries</h2>
+            <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+
+            <h2>Lunchtime is Anytime</h2>
+            <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+
+            <h2>Panoramic View</h2>
+            <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100 stair climb for bragging rights.</p>
+          </div>
+          <div class="image-block">
+            <img src="/lighthouseisland.jpg" alt="Lighthouse Image">
+          </div>
+        </section>
+         <footer  class="bg-grey-200 text-center text-sm italic p-2 ">
+       Copyright © 2025 Deka Abdi Ali
+
+    </footer>
+      </main>
+    </div>
+   
+  </div>
+  </div> -->
+
+ 
+
+<!-- 
+  
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg   bg-blue-900 text-center text-sm italic p-2">
+ 
+  <h1 class="text-xl font-semibold underline mb-4 text-center text-white">Practice 7.7</h1>
+  <div class="bg-blue m-10 rounded-lg p-2">
+    <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center drop-shadow-lg tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div>
+    <div class="flex flex-1">
+
+         <div class="bg-blue-200 text-center font-bold italic p-4">
+      
+       
+         </div>
+      <main class="bg-gray-100 flex-1 p-6 border-l w-72 ml-auto text-right">
+        <section class="content">
+          <div class="text-block
+">
+            <h2>Locally Roasted Free-Trade Coffee</h2>
+            <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+
+            <h2>Specialty Pastries</h2>
+            <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+
+            <h2>Lunchtime is Anytime</h2>
+            <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+
+            <h2>Panoramic View</h2>
+            <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100 stair climb for bragging rights.</p>
+          </div>
+          <div class="image-block">
+            <img src="/lighthouseisland.jpg" alt="Lighthouse Image">
+          </div>
+        </section>
+         <footer  class="bg-blue-200 text-center text-sm italic p-2 ">
+       Copyright © 2025 Deka Abdi Ali
+
+    </footer>
+      </main>
+    </div>
+   
+  </div>
+  </div> -->
+
+
+
+
+
+
+
+
+<!--   
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg   bg-blue-900 text-center text-sm italic p-2">
+ 
+  <h1 class="text-xl font-semibold underline mb-4 text-center text-white">Practice 7.8</h1>
+  <div class="bg-blue m-10 rounded-lg p-2">
+    <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center drop-shadow-lg tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div>
+    <div class="flex flex-1">
+
+      
+         <div class="bg-blue-200 text-center font-bold italic p-4">
+      
+       
+         </div>
+      <main class="bg-gray-100 flex-1 p-6 border-l w-72 ml-auto text-right">
+        <section class="content">
+          <div class="text-block
+">
+            <h2>Locally Roasted Free-Trade Coffee</h2>
+            <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+
+            <h2>Specialty Pastries</h2>
+            <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+
+            <h2>Lunchtime is Anytime</h2>
+            <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+
+            <h2>Panoramic View</h2>
+            <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100 stair climb for bragging rights.</p>
+          </div>
+          <div class="image-block">
+            <img src="/lighthouseisland.jpg" alt="Lighthouse Image" class="w-200 h-600 ">
+          </div>
+        </section>
+         <footer  class="bg-blue-200 text-center text-sm italic p-2 ">
+       Copyright © 2025 Deka Abdi Ali
+
+    </footer>
+      </main>
+    </div>
+   
+  </div>
+  </div> -->
+
+
+
+   <section id="practice9" class="practice-section">
+  <h2 style="color: white; text-decoration: underline; text-align: center;"> practice 7.9</h2>
+  <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header> 
+  <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="rooms.html">Menu</a></li>
+     <li><a href="map.html">Map</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav> 
+  <main> 
+   	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+     <img src="lighthouseisland.jpg" width="250" height="355"  alt="Lighthouse Island">
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery!</p>
+	<p>The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+   </main> 
+   <footer>Copyright &copy; 2020
+   </footer>
+  </div> 
+ </section>
+
+
+
+<!-- 
+
+
+
+  
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg   bg-blue-900 text-center text-sm italic p-2">
+ 
+  <h1 class="text-xl font-semibold underline mb-4 text-center text-white">Practice 7.9</h1>
+  <div class="bg-blue m-10 rounded-lg p-2">
+    <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center drop-shadow-lg tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div>
+    <div class="flex flex-1">
+
+      
+         <div class="bg-blue-200 text-center font-bold italic p-4">
+      
+       
+         </div>
+      <main class="bg-gray-100 flex-1 p-6 border-l w-72 ml-auto text-right">
+        <section class="content">
+          <div class="text-block
+">
+            <h2>Locally Roasted Free-Trade Coffee</h2>
+            <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+
+            <h2>Specialty Pastries</h2>
+            <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+
+            <h2>Lunchtime is Anytime</h2>
+            <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+
+            <h2>Panoramic View</h2>
+            <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100 stair climb for bragging rights.</p>
+          </div>
+          <div class="image-block">
+            <img src="/lighthouseisland.jpg" alt="Lighthouse Image" class="w-200 h-600 ">
+          </div>
+        </section>
+         <footer  class="bg-blue-200 text-center text-sm italic p-2 ">
+       Copyright © 2025 Deka Abdi Ali
+
+    </footer>
+      </main>
+    </div>
+   
+  </div>
+  </div> -->
+
+<!-- 
+  <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg   bg-white-900 text-center text-sm italic p-2">
+ 
+  <h1 class="text-xl font-semibold underline mb-4 text-center text-black">Practice 7.10</h1>
+  
+<section id="practice10" class="practice-section">
+   <h2 style="text-align: center;text-decoration: underline; color: black;"> 7.10</h2> -->
+  <!-- <h1 style="color: black;">Image Gallery</h1>
+<div id="gallery">
+  <ul>
+       <li><a href="photo1.jpg"><img src="thumb1.jpg" 
+       width="100"   height="75" alt="Pacific Sunset">
+       <span><img src="photo1.jpg" width="250" height="150"
+        alt="Pacific Sunset"><br>Pacific Sunset</span></a>
+  </li>
+
+     <li><a href="photo2.jpg"><img src="thumb2.jpg" 
+       width="100"   height="75" alt="Pacific Sunset">
+       <span><img src="photo2.jpg" width="250" height="150"
+        alt="Pacific Sunset"><br>Pacific Sunset</span></a>
+  </li>
+
+     <li><a href="photo3.jpg"><img src="thumb3.jpg" 
+       width="100"   height="75" alt="Pacific Sunset">
+       <span><img src="photo3.jpg" width="250" height="150"
+        alt="Pacific Sunset"><br>Pacific Sunset</span></a>
+  </li>
+
+   <li><a href="photo4.jpg"><img src="thumb4.jpg" 
+       width="100"   height="75" alt="Pacific Sunset">
+       <span><img src="photo4.jpg" width="250" height="150"
+        alt="Pacific Sunset"><br>Pacific Sunset</span></a>
+  </li>
+</ul>
+
+</div> -->
+<!-- </section>
+  </div> -->
+
+
+  <!--section practice 7.10-->
+<section id="practice10" class="practice-section">
+  <h2 style="text-align: center;text-decoration: underline; color: black;"> practice  7.10</h2>
+  <h1 style="color: black;">Image Gallery</h1>
+<div id="gallery">
+<ul>
+  <li><a href="photo1.jpg"><img src="thumb1.jpg" 
+       width="100"   height="75" alt="Golden Gate Bridge">
+       <span><img src="photo1.jpg" width="250" height="150"
+        alt="Golden Gate Bridge"><br>Golden Gate Bridge</span></a>
+  </li>
+   <li><a href="photo2.jpg"><img src="thumb2.jpg" 
+       width="100"   height="75" alt="California Beach">
+       <span><img src="photo2.jpg" width="250" height="150"
+        alt="California Beach"><br>California Beach</span></a>
+  </li>
+   <li><a href="photo3.jpg"><img src="thumb3.jpg" 
+       width="100"   height="75" alt="Rocky Shoreline">
+       <span><img src="photo3.jpg" width="250" height="150"
+        alt="Rocky Shoreline"><br>Rocky Shoreline</span></a>
+  </li>
+   <li><a href="photo4.jpg"><img src="thumb4.jpg" 
+       width="100"   height="75" alt="Pacific Sunset">
+       <span><img src="photo4.jpg" width="250" height="150"
+        alt="Pacific Sunset"><br>Pacific Sunset</span></a>
+  </li>
+</ul>
+</div>
+</section>
+  
+
+
+  
+  <!-- <div class="bg-white text-left p-6 m-10 rounded-lg shadow-lg   bg-blue-900 text-center text-sm italic p-2">
+ 
+  <h1 class="text-xl font-semibold underline mb-4 text-center text-white">Practice 7.11</h1>
+  <div class="bg-blue m-10 rounded-lg p-2">
+    <div class="relative rounded-lg overflow-hidden">
+      <img src="/lighthouselogo.jpg" alt="lighthouselogo" class="w-[1100px] h-[200px] object-cover rounded-md" />
+      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[3rem] font-extrabold text-black text-center drop-shadow-lg tracking-wide">
+        Lighthouse Bistro
+      </h2>
+    </div>
+    <div class="flex flex-1">
+
+      
+         <div class="bg-blue-200 text-center font-bold italic p-4">
+      
+       
+         </div>
+      <main class="bg-gray-100 flex-1 p-6 border-l w-72 ml-auto text-right">
+        <section class="content">
+          <div class="text-block
+">
+            <h2>Locally Roasted Free-Trade Coffee</h2>
+            <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+
+            <h2>Specialty Pastries</h2>
+            <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+
+            <h2>Lunchtime is Anytime</h2>
+            <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+
+            <h2>Panoramic View</h2>
+            <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100 stair climb for bragging rights.</p>
+          </div>
+          <div class="image-block">
+            <img src="/lighthouseisland.jpg" alt="Lighthouse Image" class="w-200 h-600 ">
+          </div>
+        </section>
+         <footer  class="bg-blue-200 text-center text-sm italic p-2 ">
+       Copyright © 2025 Deka Abdi Ali
+
+    </footer>
+      </main>
+    </div>
+   </div>
+  </div> -->
+
+
+
+  <!--section practice 7.11-->
+<section id="practice11" class="practice-section">
+  <h2 style="color: #fff; text-decoration: underline; text-align: center;"> practice 7.11</h2>
+  <div id="wrapper">
+  <header>
+    <h1 style="text-align: center;">Lighthouse Island Bistro</h1>
+  </header>
+  <!-- <nav>
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+  </nav> -->
+  <main> 
+      <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+  	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+  	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+  </main>
+  <footer>Copyright &copy; 2020
+  </footer>
+</div>
+</section>
+
+
+
+
+</body>
+</html>
+
