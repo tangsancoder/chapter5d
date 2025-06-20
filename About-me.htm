@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="so">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/logo deka canva.png" type="image/x-icon" />
+  </head>
+  <body class="bg-[#c5e6eb]">
+
+    <!-- Header -->
+    <header class="flex flex-wrap justify-between items-center px-4 sm:px-6 py-4 bg-white shadow">
+      <img src="logo.jpg" alt="Logo" class="h-12" />
+      <nav class="flex flex-wrap gap-4 sm:space-x-6 text-black font-medium mt-4 sm:mt-0">
+        <a href="/home-page[1].html" class="text-teal-700">Home</a>
+        <a href="#">About Me</a>
+        <a href="/about-JUS.html">About jamacdeyda</a>
+        <a href="/About-xfdey.html">About xaafadeyda</a>
+        <a href="/About-Content.htm">Content</a>
+          <!-- Others Dropdown -->
+  <div class="relative">
+    <button id="dropdownButton" class="hover:underline focus:outline-none text-sm md:text-base">Others▾</button>
+    <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-white shadow-lg rounded-md mt-1 w-36 py-1 z-50 text-sm">
+      <li><a href="chapter 6.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 6</a></li>
+      <li><a href="ch.7.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 7</a></li>
+      <li><a href="chapter 8.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 8</a></li>
+      <li><a href="chapter 9.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 9</a></li>
+      <li><a href="chapter 10.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 10</a></li>
+    </ul>
+
+  </div>
+
+</header>
+</nav>
+
+<!-- JavaScript for toggle -->
+<script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+</script>
+      </nav>
+      <button class="bg-[#c5e6eb] text-black px-4 py-2 rounded-md shadow mt-4 sm:mt-0">
+        Get Started →
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-10 py-10 sm:py-20">
+      <div class="max-w-2xl">
+        <span class="bg-teal-700 text-white px-4 py-1 rounded-full inline-block mb-4">About me</span>
+        <h1 class="text-3xl sm:text-5xl font-bold leading-tight mb-6">
+          Ku soo dhawoow <br />
+          nolosheyda gaarka ah
+        </h1>
+        <p class="text-gray-700 text-base sm:text-lg mb-6">
+          Aqriste, ma jeclaan lahayd inaad wax ka ogaato nolosheyda? Dabcan haa! <br />
+          Jawaabtaas filan waa hoos usoo dhaadhac oo wax badan iga baro.
+        </p>
+        <button class="bg-black text-white px-6 py-3 rounded-md shadow">
+          Get Started →
+        </button>
+      </div>
+      <div class="mt-10 lg:mt-0 lg:ml-12 w-full max-w-sm">
+        <img
+          src="/Using Content Marketing to Enhance Your Personal Brand (1).jpg"
+          alt="About me image"
+          class="rounded-[2.5rem] w-full object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 py-10 px-4">
+      <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_.jpg" alt="Deka" class="rounded-xl w-32 h-20 object-cover shadow" />
+      <img src="/Dark days.jpg" alt="DK" class="rounded-xl w-32 h-20 object-cover shadow" />
+      <img src="/logo.jpg" alt="DK 2" class="rounded-xl w-32 h-20 object-cover shadow" />
+      <img src="/Sunny Mishra (@hlosunnymishra) on X.jpg" alt="Tech" class="rounded-xl w-32 h-20 object-cover shadow" />
+      <img src="/Beautiful Flowers - iPhone, Samsung, and Mobile….jpeg" alt="Deka 2" class="rounded-xl w-32 h-20 object-cover shadow" />
+      <img src="Monogram DK Logo Design By Vectorseller _ TheHungryJPEG.jpg" alt="DK 3" class="rounded-xl w-32 h-20 object-cover shadow" />
+    </section>
+
+    <!-- Main About Me Section -->
+    <section class="flex flex-col lg:flex-row items-start justify-center px-4 sm:px-6 lg:px-10 py-10 gap-10">
+      <div class="w-full lg:w-1/2 relative">
+        <img src="/Programacion.jpg" alt="programmer" class="rounded-xl shadow-md w-full max-w-md" />
+        <img src="/12 Life-Changing Habits You Can Honestly Start Today.jpeg" alt="Books" class="absolute bottom-[-30px] right-0 w-20 sm:w-28 rounded-xl shadow-md" />
+      </div>
+      <div class="w-full lg:w-1/2">
+        <span class="bg-teal-700 text-white px-4 py-1 rounded-full inline-block mb-4">about me</span>
+        <h2 class="text-2xl font-bold mb-4">Maxaad bartaa hadda ama kuliyaddaad dhigataa?</h2>
+        <p class="text-gray-700 mb-6">
+          Waxaan hadda dhigtaa kuliyadda Science gaar ahaan Computer Science oo aan kasii barto Software Engineering.<br />
+          Jaamacadda la yiraahdo SNU University.
+        </p>
+
+        <!-- Profile 1 -->
+        <div class="flex items-start space-x-4 mb-4">
+          <img src="/download (15).jpeg" alt="profile" class="w-14 h-14 rounded-full object-cover" />
+          <div>
+            <h4 class="font-semibold">Yaan ahay aniga?</h4>
+            <p class="text-gray-600 text-sm">Waxaan dhameeyey dugsiga 2 ama 3 sano kahor. Waxaan horey ugu fiicnaa design laakiin hadda waxaan bartay design website-yada iyo barnaamijyada.</p>
+          </div>
+        </div>
+
+        <!-- Profile 2 -->
+        <div class="flex items-start space-x-4">
+          <img src="/4d7b97fc-b883-445b-bf31-45d66eb63ef0.jpeg" alt="flims" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover mb-2" />
+          <div>
+            <h4 class="font-semibold">Waqtigeyga inteen kubixiyaa?</h4>
+            <p class="text-gray-600 text-sm">Markaan firaaqo helo waxaan waqtigeyga ku bixiyaa akhriska buugaag kala duwan sida: sheekooyin, taariikh, saynis, dhaqanka, iyo cilmiga bulshada. Sidoo kale, waxaan xiiseeyaa daawashada filimada horarka.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section class="text-center py-14 px-4">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4">
+        Ma xiiso galisay? <br /> Maxaad iga baratay nolosheyda gaarka ah?
+      </h2>
+      <p class="text-gray-700 mb-6">
+        Waxaa jira waxyaabo badan oo xiiso leh nolosheyda, balse <br />
+        waad igu dhiiragelin kartaa inaad wax badan i weydiiso ama i barato.
+      </p>
+      <div class="flex justify-center gap-6 p-6">
+    <img src="/88.jpg" alt="Image 1" class="w-96 rounded-2xl shadow-lg">
+    <img src="/Ai.jpg" alt="Image 2" class="w-96 rounded-2xl shadow-lg">
+  </div>
+
+    </section>
+
+    <!-- Kulliyada Section -->
+    <section class="bg-[#d6f0f5] py-12 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <!-- Text -->
+        <div>
+          <span class="inline-block bg-white text-[#007b83] px-4 py-1 rounded-full text-sm font-semibold mb-4">ABOUT ME</span>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">Yaa kugu dhiiragaliyey kulliyaddan?</h2>
+          <p class="text-base mb-6 leading-relaxed">
+            Kulliyadda waxay iila muuqatay mid cajiib ah. Waxay iga dhigtay qof rumeysan inuu noqon karo nooca ugu wanaagsan. Mahadsanid! 💻 Gaar ahaan kuwa igu dhiirageliyay Software Full-stack Developer ❤️
+          </p>
+
+          <!-- Profiles -->
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div class="flex items-center gap-4">
+              <img src="/deka.jpg" alt="deka" class="w-10 h-10 rounded-full object-cover" />
+              <div>
+                <h4 class="font-semibold">Deka</h4>
+                <p class="text-sm text-gray-600">Deka Diini, proud teenager programmer & fullstack developer</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img src="/Premium Photo _ Front view graduation cap on pile of books.jpg" alt="jamacad" class="w-10 h-10 rounded-full object-cover" />
+              <div>
+                <h4 class="font-semibold">Jaamacadda</h4>
+                <p class="text-sm text-gray-600">Thanks for the great motivation ❤️</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- (You can add right side image or text if you want here) -->
+      </div>
+    </section>
+
+  </body>
+</html>

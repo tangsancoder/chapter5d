@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="so">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About university</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/logo deka canva.png" type="image/x-icon">
+  </head>
+  <body class="bg-[#c5e6eb]">
+    <header class="flex flex-wrap justify-between items-center px-6 py-4 bg-white shadow">
+      <img src="logo.jpg" alt="Logo" class="h-12 mb-2 sm:mb-0" />
+      <nav class="flex flex-wrap gap-4 sm:gap-6 text-black font-medium justify-center">
+        <a href="/home-page[1].html" class="text-teal-700">Home</a>
+        <a href="/About-me.htm">About Me</a>
+        <a href="/about-JUS.html">About jamacdeyda</a>
+        <a href="/About-xfdey.html">About xaafadeyda</a>
+        <a href="/About-Content.htm">Content</a>
+          <!-- Others Dropdown -->
+  <div class="relative">
+    <button id="dropdownButton" class="hover:underline focus:outline-none text-sm md:text-base">Others▾</button>
+    <ul id="dropdownMenu" class="absolute left-0 top-full hidden bg-white shadow-lg rounded-md mt-1 w-36 py-1 z-50 text-sm">
+      <li><a href="chapter 6.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 6</a></li>
+      <li><a href="ch.7.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 7</a></li>
+      <li><a href="chapter 8.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 8</a></li>
+      <li><a href="chapter 9.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 9</a></li>
+      <li><a href="chapter 10.html" class="block px-3 py-1 hover:bg-gray-100">Chapter 10</a></li>
+    </ul>
+
+  </div>
+
+</header>
+</nav>
+
+<!-- JavaScript for toggle -->
+<script>
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+</script>
+      </nav>
+      <button class="bg-[#c5e6eb] text-black px-4 py-2 rounded-md shadow mt-2 sm:mt-0">
+        Get Started →
+      </button>
+    </header>
+
+    <section class="flex flex-col lg:flex-row items-center justify-between px-6 md:px-10 py-16 md:py-20 gap-10">
+      <div class="max-w-2xl text-center lg:text-left">
+        <span class="bg-teal-700 text-white px-4 py-1 rounded-full inline-block mb-4">university</span>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          ku soo dhawoow <br />
+          information dhameystiran
+        </h1>
+        <p class="text-gray-700 text-base md:text-lg mb-6">
+          jaamacadeyda qeeybaheedu wey badanyihiin wxayna kukala yalaan wadanka gudahiisa ee gobalada soomalia 
+          badakood balse tan aniga aan dhigta waxay kutalaa magaalada
+        </p>
+        <button class="bg-black text-white px-6 py-3 rounded-md shadow">
+          Get Started →
+        </button>
+      </div>
+
+      <div class="w-full max-w-md">
+        <img src="logo umada.jpeg" alt="university image" class="rounded-[2.5rem] w-full object-cover" />
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-10 px-4 md:px-20">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-items-center">
+        <img src="/NJ's Best Public High Schools_ 2022 Rankings Released.jpg" alt="img1" class="rounded-xl w-full max-w-[9rem] h-20 object-cover shadow"/>
+        <img src="SNU.jpg" alt="img2" class="rounded-xl w-full max-w-[9rem] h-20 object-cover shadow"/>
+        <img src="images (8).jpg" alt="img3" class="rounded-xl w-full max-w-[9rem] h-20 object-cover shadow"/>
+        <img src="images (11).jpg" alt="img4" class="rounded-xl w-full max-w-[9rem] h-20 object-cover shadow"/>
+        <img src="images (10).jpg" alt="img5" class="rounded-xl w-full max-w-[9rem] h-20 object-cover shadow"/>
+        <img src="/snu-gaheyr3.jpg" alt="img6" class="rounded-xl w-full max-w-[9rem] h-20 object-cover shadow"/>
+        <img src="/Beautiful Flowers - iPhone, Samsung, and Mobile….jpeg" alt="Logo 1" class="rounded-xl w-full max-w-[9rem] h-20 object-contain bg-white p-2"/>
+        <img src="/images (1).jpg" alt="Logo 2" class="rounded-xl w-full max-w-[9rem] h-20 object-contain bg-white p-2"/>
+      </div>
+    </section>
+
+    <!-- Section: Jamacada -->
+    <section class="py-12 px-4 md:px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div class="relative">
+          <img src="Snughyr.webp" alt="Jamacad" class="rounded-xl w-full shadow-md" />
+          <img src="images.jpg" alt="Jamacad 2" class="absolute bottom-[-30px] left-8 w-24 md:w-36 rounded-xl shadow-xl border-4 border-white"/>
+        </div>
+
+        <div>
+          <span class="inline-block bg-gray-100 text-teal-600 px-4 py-1 rounded-full text-sm font-semibold mb-4">About Jamacada</span>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">maxay qabataa jaamacada umada soomaaliyed?</h2>
+          <p class="text-base mb-6 leading-relaxed">
+            Jaamacadani waxay leedahay kuliyado tayo sare leh sida: Kuliyada caafimaadka, engineering, ICT, culuum diineed, iyo social science.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <img src="faculties.jpeg" alt="Student 1" class="w-10 h-10 rounded-full object-cover"/>
+              <div>
+                <h4 class="font-semibold">kuliyadaha ay ka koobantahy</h4>
+                <p class="text-sm text-gray-600">kuliyaheeda waxaa kamid ah engineering, science, vectanry, ecnomic, beeraha, low, medicin</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <img src="Dark days.jpg" alt="Student " class="w-10 h-10 rounded-full object-cover"/>
+              <div>
+                <h4 class="font-semibold">waa sidee waxbarashadeeda jamacad</h4>
+                <p class="text-sm text-gray-600">
+                  waxbarashadeeda aadbeey ufiicantahy marka loo ego jaamacdaha wadanka ee aadka ufiican waxayna leedahay shahaado caalami ah oo hadii aad kaqaadato ad caalamaka kumari karto meelkasta
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-20 max-w-3xl mx-auto">
+        <h3 class="text-2xl font-semibold mb-2">ma xiiseyneysaa jamacdeyda ina kusoo biirtaa?</h3>
+        <p class="text-gray-600">
+          haa dabcan sababto ah jaamacadaan lamid ma aha jaamacadakale ee wadanka qofkii raba inuu kusoobiraa waa inuu exam soogalaa macalin iyo ardaybo taasna waxay cadeeynee in aqoonteeda aad usareyso waa nasiib badantahy hadey ku aqbasho jamacda.
+        </p>
+      </div>
+    </section>
+    <!-- section map -->
+  <div class="mt-0 bg-gray-200">
+    <img src="/WhatsApp Image 2025-05-17 at 09.53.42_5a326053.jpg" usemap="#snu-map" alt="SNU" width="800" class="ml-48 ">
+
+      <map name="snu-map">
+        <!-- Sawirka Madaxweynaha -->
+        <area shape="rect" coords="290,265,400,315" href="https://www.facebook.com/share/12CMCZYKT1H/" alt="Madaxweynaha" target="_blank">
+    
+        <!-- Calanka Soomaaliya -->
+        <area shape="rect" coords="100,170,430,110" href="https://villasomalia.gov.so/en/contact-us/" alt="Calanka Soomaaliya" target="_blank">
+    
+        <!-- Logo-da Jaamacadda -->
+        <area shape="rect" coords="510,110,590,250" href="https://snu.edu.so/" alt="Logo Jaamacadda" target="_blank">
+      </map>
+  </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+      <img src="/AA.jpg" alt="Sawir 1" class="w-full h-60 rounded-lg transition-transform duration-300 hover:scale-105 shadow-md" />
+      <img src="/BB.jpg" alt="Sawir 2" class="w-full h-60 rounded-lg transition-transform duration-300 hover:scale-105 shadow-md" />
+      <img src="/CC.jpg" alt="Sawir 3" class="w-full h-60 rounded-lg transition-transform duration-300 hover:scale-105 shadow-md" />
+      <img src="/DD.jpg" alt="Sawir 4" class="w-full h-60 rounded-lg transition-transform duration-300 hover:scale-105 shadow-md" />
+      <img src="/FF.jpg" alt="Sawir 5" class="w-full h-60 rounded-lg transition-transform duration-300 hover:scale-105 shadow-md" />
+      <img src="/JJ.jpg" alt="Sawir 6" class="w-full h-60 rounded-lg transition-transform duration-300 hover:scale-105 shadow-md" />
+    </div>
+
+    <!-- Section: Qebteen Dhigtaa -->
+    <section class="bg-white py-12 px-4 md:px-12">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-block bg-[#D7F3F9] text-gray-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+            about university
+          </span>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">qebteen dhigtaa aniga?</h2>
+          <p class="text-base mb-6 leading-relaxed text-gray-700">
+            waxaan dhigtaa sayniska kombiyuutarka (computer science) waana qebta ugu xiisaha badan ee cilmi ahaan, sababtoo ah waxay si qoto dheer u faahfaahisaa aqoonta technology-ga casriga ah.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <img src="logo umada.jpeg" alt="logo" class="w-10 h-10 rounded-full object-cover"/>
+              <div>
+                <h4 class="font-semibold">imisa qeeyb ay kakobantahy</h4>
+                <p class="text-sm text-gray-600">
+                  Waxeey ka koobanatay 5 qeeyb waxayna kala yihiin qeebta km4, qeebta xmar weyne, qeebta gheyr,  iyo laba qeeyb ookala oo kuyaal gobalada
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <img src="images (1).jpg" alt="ardeyda" class="w-10 h-10 rounded-full object-cover"/>
+              <div>
+                <h4 class="font-semibold">SNU</h4>
+                <p class="text-sm text-gray-600">
+                  Ardayda jamacada  waa kuwa aad ufurfuran oo soodhaweynta kufiican marka lasoobooqdo waxayna leeyihiin aqoon aad ufiican oo taya leh.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="/sitemgr_photo_3979.jpg" alt="Classroom" class="rounded-xl w-full shadow-md" />
+          <img src="snu-gaheyr3.jpg" alt="Building" class="absolute bottom-[-30px] right-6 w-24 md:w-32 rounded-xl shadow-xl border-4 border-white"/>
+        </div>
+      </div>
+    </section>
+
+    <img src="/DK logo design_ Initial DK letter logo design monogram vector design pro vector_.jpg" alt="Logo" class="mx-auto w-14 my-6" />
+
+    <footer class="bg-[#01777C] text-white py-6 mt-20 text-center rounded-t-3xl">
+      <p class="text-sm">Copyright, Daka.Abd Ali</p>
+    </footer>
+  </body>
+</html>
