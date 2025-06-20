@@ -1,3 +1,62 @@
+/* General Body Styles: Applied globally, with specific section styles overriding where needed. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000; /* Updated: Darker background color to match the image */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Common Paragraph Style */
+p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+/* General styles for all practice sections */
+.practice-section {
+    padding: 20px; /* General padding for all sections */
+    margin: 20px auto; /* Center sections horizontally with vertical spacing */
+    max-width: 90%; /* Max width for better readability on larger screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* Default background for section content */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Clear floats within sections */
+}
+
+/* Main Navigation Bar for the combined page */
+nav.main-nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+nav.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Allows padding and margin, and proper centering */
+}
+nav.main-nav a:hover {
+    background-color: #555;
+    transform: translateY(-2px); /* Slight lift on hover */
+
+}
+.header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+/* Styles for Practice 6.1 (from ch6p1.html) */
 #practice1 .containe {
     background-color: wheat;
     padding: 10px;
@@ -5,12 +64,9 @@
 
 #practice1 h2 {
     text-align: center;
-     font-family: Arial, sans-serif; 
-
 }
 
 #practice1 .info {
-     font-family: Arial, sans-serif; 
      background-color: #d1b48c;
          margin-top: 20;
             width: 100%;
@@ -23,14 +79,13 @@
 }
 
 #practice1 .info h4 {
-     font-family: Arial, sans-serif; 
     text-align: left;
     margin: 20px;
     padding: 0 0 0 20px;
     font-size: 7em;
     font-weight: bold;
     color: #251712;
-    /* line-height: 1; */
+    line-height: 1;
 }
 
 #practice1 .info img {
@@ -51,123 +106,373 @@
     display: inline-block; /* Allow spacing and padding to apply correctly */
 }
 
+/* Styles for Practice 6.2 (from ch6p2.html) */
+#practice2 {
+    /* Background and margin moved to the section wrapper to preserve original look */
+    background-color: white;
+    margin: 20px auto; /* Adjust margin for centering in combined layout */
+    box-sizing: border-box;
+}
+#practice2 .header-box {
+    background-color: #e0f2f7;
+    border-bottom: 3px ridge #330000;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+#practice2 .header-box h3 {
+    color: #333;
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 0;
+    text-align: center;
+}
+#practice2 .container-box {
+    background-color: #a7d9f7;
+    padding: 30px;
+    margin: 0; /* Reset margin from other elements */
+    margin-top: 10px;
+    width: 80%;
+    float: right; /* Original float maintained */
+    font-weight: bold;
+    border: 1px solid #000;
+    font-size: 1.80em;
+    text-align: left;
+}
+
+/* Styles for Practice 6.3 (consolidated from ch6p3, ch6p4, ch6p5, using ch6p5 for base) */
+        p{
+            font-size: 1.3em;
+        }
+        #practice3 .container{
+            background: linear-gradient(white , #a4b5d7);
+            width: 67%;
+            padding: 10px;
+            float: left;
+        }
+        .info{
+            align-items: center;
+        }
+         #practice3 h1 { background-image: url(p3logo.png);
+        background-repeat: no-repeat;
+        background-color: #98aed9;
+        height: 100px; width: 700px; font-size: 3em;
+        border-radius: 15px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .nav-link{
+        word-spacing: 20px;
+        font-size: 1.7em;
+    }
+    .nav-link:hover{
+        color: #000;
+    }
+
+/* styles for practice 6.4*/
+  #practice4{
+    background-color: #9db3dc;
+    margin-top: 0;
+}
+.container{
+            background:#fff;
+            width: 67%;
+            padding: 2em;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: center;
+            min-width: 80px;
+            align-items: center;
+        }
+        .info{
+            align-items: center;
+        }
+        #practice4 h1 { background-image: url(p3logo.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        background-color: #98aed9;
+        height: 100px; width: 700px; font-size: 3em;
+        border-radius: 15px;
+        padding: 20px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .nav-link{
+        word-spacing: 20px;
+        font-size: 1.7em;
+    }
+    .nav-link:hover{
+        color: #000;
+    }
+/* styles for practice 6.5*/
+  #practice5{
+    background-color: #9db3dc;
+    margin-top: 0;
+}
+.cont{
+            background:#fff;
+            width: 67%;
+            box-shadow: 5px 5px 5px #1E1E1E;
+            padding: 2em;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: center;
+            min-width: 80px;
+            align-items: center;
+        }
+        .info{
+            align-items: center;
+        }
+        #practice5 h1 { background-image: url(p3logo.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        background-color: #98aed9;
+        text-shadow: 3px 3px 3px #676767;
+        height: 100px; width: 700px; font-size: 3em;
+        border-radius: 15px;
+        padding: 20px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .nav-link{
+        word-spacing: 20px;
+        font-size: 1.7em;
+    }
+    .nav-link:hover{
+        color: #000;
+    }
 
 
-
-#practice8 {
+/* Styles for Practice 6.6 (from ch6p6.html) */
+#practice6 {
+    background-color: #ffffdd; /* Body background color from ch6p6 applied to section */
+    margin-top: 0;
     padding-top: 20px; /* Added spacing for this section */
     box-sizing: border-box;
+}
+#practice6 .information {
+    box-shadow: 10px 10px 10px #333333; /* Box shadow from ch6p6 */
+    border: 1px solid #000033;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    min-width: 660px; /* Min-width from ch6p6 */
+    box-sizing: border-box;
+}
+#practice6 header {
+    background-color: #000033;
+    color: #fff;
+    background-image: url('coder.png'); /* Image path noted for user */
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 2em;
+    text-shadow: 1px 1px 1px #fff;
+    box-sizing: border-box;
+}
+#practice6 h1 { /* This h1 is for KayakDoorCountry.net and 'Your next adventure...' */
+    margin-bottom: 0; /* Specific margin for H1s in this section */
+}
+#practice6 .nav-link { /* For KayakDoorCountry navigation */
+    word-spacing: 20px;
+    font-weight: bold;
+    background-color: #ffffdd;
+    text-align: center;
+    color: blue; /* Default color for links in this section */
+    font-size: 1.25em;
+    padding: 10px 0; /* Add some vertical padding */
+}
+#practice6 .nav-link a {
+    text-decoration: none;
+    color: blue;
+}
+/* Specific rule to maintain the purple color for the 'Home' link */
+/*  */
+#practice6 main {
+    background-color: #004d99;
+    background-image: url('Coder\ at\ Night.png'); /* Image path noted for user */
+    background-size: 100% 100%; /* Background image size */
+    color: #fff;
+    padding: 2em;
+    box-sizing: border-box;
+}
+#practice6 footer {
+    font-style: italic;
+    background-color: #ffffdd;
+    font-size: .80em;
+    text-align: center;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
 
-       background-color: rgb(249, 244, 244);
+/* Styles for Practice 6.7-6.9 (consolidated from ch6p7, ch6p8, ch6p9, using ch6p9 for base) */
+#practice7 {
+    padding-top: 20px; /* Added spacing for this section */
+    box-sizing: border-box;
+}
+#practice7 #content {
+    background-repeat: no-repeat;
+    margin: auto; /* Center the content div */
+    width: 640px;
+    height: 489px;
+    padding-top: 20px;
+    display: block; /* Ensure it's a block for margin: auto to work */
+    box-sizing: border-box;
+    /* Styles like opacity from ch6p7 or rgba color from ch6p8 are managed through the H1's color directly */
+}
+#practice7 h1 { /* This h1 is for Fall Nature Hikes */
+    color: #000; /* Specific HSLA color with alpha from ch6p9 */
+    font-family: 'Times New Roman', serif; /* Font from ch6p9 */
+    font-size: 4em; /* Font size from ch6p9 */
+    padding: 10px; /* Padding from ch6p9 */
+    /* Previous styles from ch6p7/8 (background-color, opacity, text-align) are implicitly overridden or handled by the more specific H1 style */
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0.6;
+    margin-left: 40px;
 }
 #practice8 #content {
     background-repeat: no-repeat;
     margin: auto; /* Center the content div */
-    width: 650px;
-    height: 489px;
-    padding: 35px;
-    display: block; /* Ensure it's a block for margin: auto to work */
-    box-sizing: border-box;
+    width: 640px;
+    height: 480px;
+    padding-top: 20px;
     /* Styles like opacity from ch6p7 or rgba color from ch6p8 are managed through the H1's color directly */
 }
 #practice8 h1 { /* This h1 is for Fall Nature Hikes */
-    color: #000; /* Specific HSLA color with alpha from ch6p9 */
-    /* color: rgba(255,255,255,0.8); */
-    font-family: 'Times New Roman', serif; /* Font from ch6p9 */
-    font-size: 4em; /* Font size from ch6p9 */
+    color: #ffffff; /* Specific HSLA color with alpha from ch6p9 */
+    color: rgba(255,255,255,0.8);
+    font-family: verdana,Helvetica,sans-serif; /* Font from ch6p9 */
+    font-size: 5em; /* Font size from ch6p9 */
     padding-right: 10px; /* Padding from ch6p9 */
     /* Previous styles from ch6p7/8 (background-color, opacity, text-align) are implicitly overridden or handled by the more specific H1 style */
-    box-sizing: border-box;
     text-align: right;
-    text-transform: uppercase;
-    font-weight: bold;
-
-        background-color: #fff;
-
-            opacity: 0.6;
-                margin-left: 40px;
-}
-
-
-
-
-#practice9 {
-    padding-top: 20px; /* Added spacing for this section */
-    box-sizing: border-box;
-           background-color: rgb(249, 244, 244);
-
 }
 #practice9 #content {
     background-repeat: no-repeat;
     margin: auto; /* Center the content div */
-    width: 650px;
-    height: 489px;
-    padding: 35px;
-    display: block; /* Ensure it's a block for margin: auto to work */
-    box-sizing: border-box;
+    width: 640px;
+    height: 480px;
+    padding-top: 20px;
     /* Styles like opacity from ch6p7 or rgba color from ch6p8 are managed through the H1's color directly */
 }
 #practice9 h1 { /* This h1 is for Fall Nature Hikes */
-    color: #fff;
-     /* Specific HSLA color with alpha from ch6p9 */
-    /* color: hsla(60,100%,90%,0.8); */
-    font-family: 'Times New Roman', serif; /* Font from ch6p9 */
+    color: #ffffcc; /* Specific HSLA color with alpha from ch6p9 */
+    color: hsla(60,100%,90%,0.8);
+    font-family: Georgia, "Times New Roman", serif; /* Font from ch6p9 */
     font-size: 6em; /* Font size from ch6p9 */
-    padding: 20px;     /* Padding from ch6p9 */
+    padding: 20px; /* Padding from ch6p9 */
     /* Previous styles from ch6p7/8 (background-color, opacity, text-align) are implicitly overridden or handled by the more specific H1 style */
-    box-sizing: border-box;
-    text-align: right;
-    font-weight: bold;
-    text-transform: uppercase;
-    
-
-    
-        /* background-color: #fff; */
-
-            opacity: 0.5;
-                margin-left: 50px;
 }
 
-
-
+/* Styles for Practice 6.10 (from ch6p10.html) */
 #practice10p1 {
-   /* background-color: #da70d6; */
-       /* background-image: radial-gradient(#fff,#da70d6); */
-         background-image: linear-gradient(to bottom,#fff,#da70d6); 
-}
-.containn{
-     /* background-color: #da70d6; Body background color from ch6p10 applied to section */
-    /* background-image: linear-gradient(to bottom,#fff,#da70d6);  */
-    background-repeat: no-repeat;
-    padding: 20px; /* Add some padding to the section */
-    min-height: 500px; /* Ensure gradient is visible */
-    box-sizing: border-box;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+   background-color: #DA70D6;
+   background-image: linear-gradient(to bottom,#ffffff,#da70d6);
+   background-repeat: no-repeat;
 }
 #practice10p1 h1 { /* Generic h1 for this section, to differentiate from other section h1s */
     text-align: center;
-    margin-bottom: 20px;
     color: #333; /* A default color for visibility against the gradient */
 }
 #practice10p2 {
-   /* background-color: #da70d6; */
-       background-image: radial-gradient(#fff,#da70d6);
-}
-.contain{
-      /* background-color: #da70d6; Body background color from ch6p10 applied to section */
-    /* background-image: radial-gradient(#fff,#da70d6); Radial gradient from ch6p10 */
-    background-repeat: no-repeat;
-    padding: 20px; /* Add some padding to the section */
-    min-height: 500px; /* Ensure gradient is visible */
-    box-sizing: border-box;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+   background-color: #DA70D6;
+   background-image: radial-gradient(#ffffff,#da70d6);
+   background-repeat: no-repeat;
 }
 #practice10p2 h1 { /* Generic h1 for this section, to differentiate from other section h1s */
     text-align: center;
-    margin-bottom: 20px;
     color: #333; /* A default color for visibility against the gradient */
+}
+/* Back Button Styles */
+.back-button {
+    display: inline-flex; /* Use flexbox for icon and text alignment */
+    align-items: center; /* Vertically align icon and text */
+    text-decoration: none;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px; /* Fully rounded corners */
+    margin: 15px; /* Margin from top and left */
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover  {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.back-button .fas {
+    margin-right: 8px; /* Space between icon and text */
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; /* Allows side-by-side with other nav items */
+    margin: 0 8px; /* Match margin with other nav links */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent; /* Transparent background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em; /* Inherit font size */
+    font-family: inherit; /* Inherit font family */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.dropbtn .fas.fa-caret-down {
+    margin-left: 8px; /* Space between text and caret icon */
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px;
+    left: 50%; /* Center dropdown content relative to its button */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    overflow: hidden; /* Ensures border-radius applies to children */
+    padding: 5px 0; /* Add some vertical padding inside dropdown */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left within dropdown */
+    transition: background-color 0.2s ease;
+    /* Reset styles that might be inherited from main-nav a */
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #000;
+    transform: none; /* Disable transform on hover for dropdown items */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
